@@ -1,0 +1,20 @@
+:root {
+  --bg-color: white`;
+
+  --color-primary: rgb(56, 80, 106);
+  --color-primary-lighter: rgb(53, 116, 151);
+  --color-secondary: rgb(10, 180, 247);
+  --color-secondary-darker: rgb(10, 180, 247);
+  --color-lightblue: rgb(214, 234, 253);
+  --color-grey : rgb(142, 142, 142);
+  --color-lightgrey: lightgrey;
+  --color-contrast: white;
+  --color-contrast-darker: rgb(227, 227, 227);
+  --color-font: rgb(88, 88, 88);
+
+  --padding-side: 10%;
+  --breakpoint-mobile: 768px;
+  --desktop-fontsize: 16px;
+  --mobile-fontsize: 18px;
+  --transition-duration: .3s;
+}

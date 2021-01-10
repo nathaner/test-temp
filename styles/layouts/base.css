@@ -1,0 +1,4 @@
+.wrapper section, footer, nav {
+  padding-left: var(--padding-side);
+  padding-right: var(--padding-side);
+}

@@ -1,0 +1,42 @@
+form {
+    display: inline-block;
+    margin: 20px auto;
+}
+
+form button.btn {
+    display: block;
+    margin: auto;
+}
+
+.form-control {
+    margin: 30px auto;
+}
+
+label {
+    display: block;
+    transition: var(--transition-duration);
+    color: var(--color-grey);
+    margin-bottom: 10px;
+}
+
+label span.optional {
+    font-style: italic;
+}
+
+input {
+    width: 25ch;
+    height: 30px;
+    border: 1px solid var(--color-lightgrey);
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+textarea {
+    border: 1px solid var(--color-lightgrey);
+    border-radius: 5px;
+}
+
+input:focus ~ label {
+    top: 0;
+    left: 0;
+}

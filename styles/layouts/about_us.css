@@ -1,0 +1,23 @@
+.about-us-intro .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.why-vaultinum ul {
+    list-style: none;
+    padding: 0;
+    line-height: 50px;
+}
+
+.why-vaultinum .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-bottom: 40px;
+}
+.why-vaultinum h3 {
+    margin: 20px auto;
+}
