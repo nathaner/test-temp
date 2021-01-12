@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import ChevronDown from './common/ChevronDown';
-import ChevronLeft from './common/ChevronLeft';
+import Chevron from './common/Chevron';
 
 export default function AccordionElement({ heading, children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +11,7 @@ export default function AccordionElement({ heading, children }) {
       <h4 onClick={handleChange}>
         {heading}
         <div>
-          {isOpen ? <ChevronDown /> : <ChevronLeft />}
+          {isOpen ? <Chevron /> : <Chevron orientation="LEFT" />}
         </div>
       </h4>
       <p>{children}</p>

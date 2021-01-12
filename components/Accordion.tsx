@@ -1,13 +1,11 @@
-import { useState } from 'react';
 import AccordionElement from './AccordionElement'
 
 export default function Accordion({ data }) {
     
-  const handleChange = () => {};
   return (
     <div className="accordion">
-      {data.map((item) => (
-        <AccordionElement heading={item.heading}>
+      {data.map((item, index) => (
+        <AccordionElement heading={item.heading} key={index}>
           {item.content}
         </AccordionElement>
       ))}
