@@ -1,24 +1,23 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 type Props = {
-  orientation?: "DOWN" | "LEFT" | "RIGHT" | "UP";
+  orientation?: 'DOWN' | 'LEFT' | 'RIGHT' | 'UP';
 };
 
 export default function Chevron(props: Props) {
-
   const getPathDefinition = () => {
     switch (props.orientation) {
-      case 'LEFT':
-        return "M15 19l-7-7 7-7"
-      case 'RIGHT':
-        return "M15 19l-7-7 7-7"
       case 'UP':
-        return "M5 15l7-7 7 7"
+        return 'M5 15l7-7 7 7';
+      case 'RIGHT':
+        return 'M9 5l7 7-7 7';
+      case 'LEFT':
+        return 'M15 19l-7-7 7-7';
       // DOWN is default
       default:
-        return "M19 9l-7 7-7-7"
+        return 'M19 9l-7 7-7-7';
     }
-  }
+  };
 
   return (
     <svg

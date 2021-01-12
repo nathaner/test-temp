@@ -33,47 +33,53 @@ const ACCORDION_DATA = [
 const SOLUTIONS = [
   {
     name: 'Deposit',
-    content: 'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
+    content:
+      'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
     readMorePath: '/solutions',
     callBackText: 'Protect your innovations',
-    callBackPath: '/'
+    callBackPath: '/',
   },
   {
     name: 'Deposit',
-    content: 'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
+    content:
+      'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
     readMorePath: '/solutions',
     callBackText: 'Protect your innovations',
-    callBackPath: '/'
+    callBackPath: '/',
   },
   {
     name: 'Deposit',
-    content: 'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
+    content:
+      'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
     readMorePath: '/solutions',
     callBackText: 'Protect your innovations',
-    callBackPath: '/'
+    callBackPath: '/',
   },
   {
     name: 'Deposit',
-    content: 'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
+    content:
+      'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
     readMorePath: '/solutions',
     callBackText: 'Protect your innovations',
-    callBackPath: '/'
+    callBackPath: '/',
   },
   {
     name: 'Deposit',
-    content: 'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
+    content:
+      'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
     readMorePath: '/solutions',
     callBackText: 'Protect your innovations',
-    callBackPath: '/'
+    callBackPath: '/',
   },
   {
     name: 'Deposit',
-    content: 'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
+    content:
+      'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
     readMorePath: '/solutions',
     callBackText: 'Protect your innovations',
-    callBackPath: '/'
+    callBackPath: '/',
   },
-]
+];
 
 export default function Home() {
   return (
@@ -94,17 +100,17 @@ export default function Home() {
         <div className="home-solutions-grid">
           {SOLUTIONS.map((solution, index) => (
             <div className="home-solution" key={index}>
-            <h3>{solution.name}</h3>
-            <p>
-              {solution.content}
-              <Link href={solution.readMorePath}>
-                <a>Read more...</a>
+              <h3>{solution.name}</h3>
+              <p>
+                {solution.content}
+                <Link href={solution.readMorePath}>
+                  <a>Read more...</a>
+                </Link>
+              </p>
+              <Link href={solution.callBackPath}>
+                <a className="btn btn-outlined">{solution.callBackText}</a>
               </Link>
-            </p>
-            <Link href={solution.callBackPath}>
-              <a className="btn btn-outlined">{solution.callBackText}</a>
-            </Link>
-          </div>
+            </div>
           ))}
         </div>
         <Link href="/solutions">
@@ -134,16 +140,16 @@ export default function Home() {
             <div>
               <img src="img/iso-27001.png" alt="ISO 27001" />
             </div>
+            <h3>ISO 27001 certified</h3>
             <p>
-              <h3>ISO 27001 certified</h3>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
               diam egestas sapien, nisi, eleifend. Diam faucibus ante at sed sit
               ultricies tristique lobortis
             </p>
           </div>
           <div className="row">
+            <h3>GDPR Ready</h3>
             <p>
-              <h3>GDPR Ready</h3>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
               diam egestas sapien, nisi, eleifend. Diam faucibus ante at sed sit
               ultricies tristique lobortis
@@ -156,16 +162,16 @@ export default function Home() {
             <div>
               <img src="img/security.png" alt="Algorithm security" />
             </div>
+            <h3>Secure algorithms</h3>
             <p>
-              <h3>Secure algorithms</h3>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
               diam egestas sapien, nisi, eleifend. Diam faucibus ante at sed sit
               ultricies tristique lobortis
             </p>
           </div>
           <div className="row">
+            <h3>All data are stored in France</h3>
             <p>
-              <h3>All data are stored in France</h3>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
               diam egestas sapien, nisi, eleifend. Diam faucibus ante at sed sit
               ultricies tristique lobortis
@@ -178,8 +184,8 @@ export default function Home() {
             <div>
               <img src="img/eidas-ready.svg" alt="eIDAS Ready" />
             </div>
+            <h3>eIDAS Ready</h3>
             <p>
-              <h3>eIDAS Ready</h3>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
               diam egestas sapien, nisi, eleifend. Diam faucibus ante at sed sit
               ultricies tristique lobortis
