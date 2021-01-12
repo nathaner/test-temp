@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import Accordion from '../components/Accordion';
 import ButtonLinkContrast from '../components/common/ButtonLinkContrast';
+import ButtonLinkOutlined from '../components/common/ButtonLinkOutlined';
 import WaveSection from '../components/WaveSection';
 
 const ACCORDION_DATA = [
@@ -109,9 +110,9 @@ export default function Home() {
                   <a>Read more...</a>
                 </Link>
               </p>
-              <Link href={solution.callBackPath}>
-                <a className="btn btn-outlined">{solution.callBackText}</a>
-              </Link>
+              <ButtonLinkOutlined href={solution.callBackPath}>
+                {solution.callBackText}
+              </ButtonLinkOutlined>
             </div>
           ))}
         </div>
@@ -212,9 +213,7 @@ export default function Home() {
           in arcu proin sed interdum orci odio. Platea nulla mauris orci ut
           morbi id risus auctor enim suscipit.
         </p>
-        <ButtonLinkContrast href="/contact">
-          Contact us
-        </ButtonLinkContrast>
+        <ButtonLinkContrast href="/contact">Contact us</ButtonLinkContrast>
       </WaveSection>
     </>
   );
