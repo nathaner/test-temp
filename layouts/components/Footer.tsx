@@ -87,12 +87,12 @@ export default function Footer() {
             <option value="/fr">French</option>
           </select>
         </div>
-        {FOOTER_ITEMS.map((item) => (
-          <div>
+        {FOOTER_ITEMS.map((item, index) => (
+          <div key={index}>
             <h4>{item.heading}</h4>
             <ul>
-              {item.items.map((link) => (
-                <li>
+              {item.items.map((link, index) => (
+                <li key={index}>
                   <Link href={link.path}>
                     <a>{link.name}</a>
                   </Link>
