@@ -15,12 +15,12 @@ form button.btn {
 label {
     display: block;
     transition: var(--transition-duration);
-    color: var(--color-grey);
     margin-bottom: 10px;
 }
 
 label span.optional {
     font-style: italic;
+    color: var(--color-grey);
 }
 
 input {
