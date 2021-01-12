@@ -87,12 +87,12 @@ const SOLUTIONS = [
 export default function Home() {
   return (
     <>
-      <section className="intro wrapped">
+      <section className="intro">
         <div>
           <h1>Vaultinum</h1>
           <p>Protect your innovations and investments</p>
         </div>
-        <video autoPlay={true} muted={true} className="intro-video">
+        <video autoPlay={true} muted={true}>
           <source src="videos/vaultinum-intro-video.mp4" type="video/mp4" />
           Sorry, your browser doesn't support embedded videos.
         </video>
