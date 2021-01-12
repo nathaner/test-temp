@@ -143,20 +143,24 @@ export default function Home() {
             <div>
               <img src="img/iso-27001.png" alt="ISO 27001" />
             </div>
-            <h3>ISO 27001 certified</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
-              diam egestas sapien, nisi, eleifend. Diam faucibus ante at sed sit
-              ultricies tristique lobortis
-            </p>
+            <div>
+              <h3>ISO 27001 certified</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
+                diam egestas sapien, nisi, eleifend. Diam faucibus ante at sed
+                sit ultricies tristique lobortis
+              </p>
+            </div>
           </div>
           <div className="row">
-            <h3>GDPR Ready</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
-              diam egestas sapien, nisi, eleifend. Diam faucibus ante at sed sit
-              ultricies tristique lobortis
-            </p>
+            <div>
+              <h3>GDPR Ready</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
+                diam egestas sapien, nisi, eleifend. Diam faucibus ante at sed
+                sit ultricies tristique lobortis
+              </p>
+            </div>
             <div>
               <img src="img/gdpr-ready.png" alt="GDPR Ready" />
             </div>
@@ -165,20 +169,24 @@ export default function Home() {
             <div>
               <img src="img/security.png" alt="Algorithm security" />
             </div>
-            <h3>Secure algorithms</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
-              diam egestas sapien, nisi, eleifend. Diam faucibus ante at sed sit
-              ultricies tristique lobortis
-            </p>
+            <div>
+              <h3>Secure algorithms</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
+                diam egestas sapien, nisi, eleifend. Diam faucibus ante at sed
+                sit ultricies tristique lobortis
+              </p>
+            </div>
           </div>
           <div className="row">
-            <h3>All data are stored in France</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
-              diam egestas sapien, nisi, eleifend. Diam faucibus ante at sed sit
-              ultricies tristique lobortis
-            </p>
+            <div>
+              <h3>All data are stored in France</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
+                diam egestas sapien, nisi, eleifend. Diam faucibus ante at sed
+                sit ultricies tristique lobortis
+              </p>
+            </div>
             <div>
               <img src="img/servers.png" alt="Servers located in France" />
             </div>
@@ -187,12 +195,14 @@ export default function Home() {
             <div>
               <img src="img/eidas-ready.svg" alt="eIDAS Ready" />
             </div>
-            <h3>eIDAS Ready</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
-              diam egestas sapien, nisi, eleifend. Diam faucibus ante at sed sit
-              ultricies tristique lobortis
-            </p>
+            <div>
+              <h3>eIDAS Ready</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis
+                diam egestas sapien, nisi, eleifend. Diam faucibus ante at sed
+                sit ultricies tristique lobortis
+              </p>
+            </div>
           </div>
         </div>
         <div className="benefit"></div>
