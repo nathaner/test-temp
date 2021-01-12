@@ -1,12 +1,11 @@
 nav {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: auto minmax(200px, 70%) auto;
     column-gap: 20px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 5px;
     margin-bottom: 10px;
-    text-align: center;
 }
 
 nav .logo {
