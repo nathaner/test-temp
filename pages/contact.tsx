@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../components/common/Button';
 
 export default function Contact() {
   return (
@@ -31,7 +32,7 @@ export default function Contact() {
           <label htmlFor="message">Message</label>
           <textarea name="message" id="message" cols={50} rows={10}></textarea>
         </div>
-        <button className="btn">Send</button>
+        <Button>Send</Button>
       </form>
     </section>
   );

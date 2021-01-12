@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import ButtonLink from '../components/common/ButtonLink';
+import ButtonLinkContrast from '../components/common/ButtonLinkContrast';
 
 export default function AboutVaultinum() {
   return (
@@ -75,9 +76,7 @@ export default function AboutVaultinum() {
             </ul>
           </div>
         </div>
-        <Link href="/">
-          <a className="btn">Get started</a>
-        </Link>
+        <ButtonLink href="/replace">Get started</ButtonLink>
       </section>
       <section className="wave-section">
         <div className="custom-shape-divider-top-1610045199">
@@ -94,9 +93,9 @@ export default function AboutVaultinum() {
           </svg>
         </div>
         <h2>Need more information?</h2>
-        <Link href="/contact">
-          <a className="btn btn-contrast">Contact us</a>
-        </Link>
+        <ButtonLinkContrast href="/contact">
+          Contact us
+        </ButtonLinkContrast>
       </section>
     </>
   );
