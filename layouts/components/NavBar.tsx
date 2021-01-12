@@ -41,7 +41,7 @@ export default function NavBar() {
         ))}
       </ul>
       <div>
-        <ButtonLink href="google.com">Sign in</ButtonLink>
+        <ButtonLink href="/">Sign in</ButtonLink>
       </div>
     </nav>
   );

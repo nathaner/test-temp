@@ -5,86 +5,10 @@ import ButtonLinkContrast from '../components/common/ButtonLinkContrast';
 import ButtonLinkOutlined from '../components/common/ButtonLinkOutlined';
 import WaveSection from '../components/WaveSection';
 
-const ACCORDION_DATA = [
-  {
-    heading: 'Why should we create source code deposits?',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida at massa laoreet facilisi ac nisl convallis. Egestas porta hac sed etiam sem tempus cras varius. Nunc sed lorem aliquam justo, amet porttitor hac sed nunc. Pulvinar pharetra eget eleifend aliquam. Gravida a risus cras luctus dignissim tristique cras aliquet. Iaculis quisque ligula platea nibh. Sit augue tempus aliquet sollicitudin in nunc purus at. Tincidunt sit egestas nibh nullam placerat sociis magna. ',
-  },
-  {
-    heading: 'What is the difference between digital and physical deposits?',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida at massa laoreet facilisi ac nisl convallis. Egestas porta hac sed etiam sem tempus cras varius. Nunc sed lorem aliquam justo, amet porttitor hac sed nunc. Pulvinar pharetra eget eleifend aliquam. Gravida a risus cras luctus dignissim tristique cras aliquet. Iaculis quisque ligula platea nibh. Sit augue tempus aliquet sollicitudin in nunc purus at. Tincidunt sit egestas nibh nullam placerat sociis magna. ',
-  },
-  {
-    heading: 'Where is your data stored?',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida at massa laoreet facilisi ac nisl convallis. Egestas porta hac sed etiam sem tempus cras varius. Nunc sed lorem aliquam justo, amet porttitor hac sed nunc. Pulvinar pharetra eget eleifend aliquam. Gravida a risus cras luctus dignissim tristique cras aliquet. Iaculis quisque ligula platea nibh. Sit augue tempus aliquet sollicitudin in nunc purus at. Tincidunt sit egestas nibh nullam placerat sociis magna. ',
-  },
-  {
-    heading: 'How do source code escrow works?',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida at massa laoreet facilisi ac nisl convallis. Egestas porta hac sed etiam sem tempus cras varius. Nunc sed lorem aliquam justo, amet porttitor hac sed nunc. Pulvinar pharetra eget eleifend aliquam. Gravida a risus cras luctus dignissim tristique cras aliquet. Iaculis quisque ligula platea nibh. Sit augue tempus aliquet sollicitudin in nunc purus at. Tincidunt sit egestas nibh nullam placerat sociis magna. ',
-  },
-  {
-    heading: 'How is it different from a hash?',
-    content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida at massa laoreet facilisi ac nisl convallis. Egestas porta hac sed etiam sem tempus cras varius. Nunc sed lorem aliquam justo, amet porttitor hac sed nunc. Pulvinar pharetra eget eleifend aliquam. Gravida a risus cras luctus dignissim tristique cras aliquet. Iaculis quisque ligula platea nibh. Sit augue tempus aliquet sollicitudin in nunc purus at. Tincidunt sit egestas nibh nullam placerat sociis magna. ',
-  },
-];
+import en from '../locales/en/homepage.json'
 
-const SOLUTIONS = [
-  {
-    name: 'Deposit',
-    content:
-      'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
-    readMorePath: '/solutions',
-    callBackText: 'Protect your innovations',
-    callBackPath: '/',
-  },
-  {
-    name: 'Deposit',
-    content:
-      'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
-    readMorePath: '/solutions',
-    callBackText: 'Protect your innovations',
-    callBackPath: '/',
-  },
-  {
-    name: 'Deposit',
-    content:
-      'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
-    readMorePath: '/solutions',
-    callBackText: 'Protect your innovations',
-    callBackPath: '/',
-  },
-  {
-    name: 'Deposit',
-    content:
-      'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
-    readMorePath: '/solutions',
-    callBackText: 'Protect your innovations',
-    callBackPath: '/',
-  },
-  {
-    name: 'Deposit',
-    content:
-      'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
-    readMorePath: '/solutions',
-    callBackText: 'Protect your innovations',
-    callBackPath: '/',
-  },
-  {
-    name: 'Deposit',
-    content:
-      'Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.',
-    readMorePath: '/solutions',
-    callBackText: 'Protect your innovations',
-    callBackPath: '/',
-  },
-];
-
-export default function Home() {
+export default function Home(props) {
+  
   return (
     <>
       <section className="intro">
@@ -101,7 +25,7 @@ export default function Home() {
       <section className="wrapped">
         <h2>Solutions</h2>
         <div className="home-solutions-grid">
-          {SOLUTIONS.map((solution, index) => (
+          {props.solutions.map((solution, index) => (
             <div className="home-solution" key={index}>
               <h3>{solution.name}</h3>
               <p>
@@ -212,7 +136,7 @@ export default function Home() {
       </section>
       <section className="wrapped">
         <h2>Your questions answered</h2>
-        <Accordion data={ACCORDION_DATA} />
+        <Accordion data={props.accordion} />
       </section>
       <WaveSection>
         <h2>Want to get in touch?</h2>
@@ -227,4 +151,16 @@ export default function Home() {
       </WaveSection>
     </>
   );
+}
+
+export function getStaticProps({locale}) {
+  const solutions = en.solutions
+  const accordion = en.accordion
+  
+  return {
+    props: {
+      solutions,
+      accordion
+    }
+  }
 }

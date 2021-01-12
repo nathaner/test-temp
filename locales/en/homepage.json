@@ -1,0 +1,68 @@
+{
+  "accordion": [
+    {
+      "heading": "Why should we create source code deposits?",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida at massa laoreet facilisi ac nisl convallis. Egestas porta hac sed etiam sem tempus cras varius. Nunc sed lorem aliquam justo, amet porttitor hac sed nunc. Pulvinar pharetra eget eleifend aliquam. Gravida a risus cras luctus dignissim tristique cras aliquet. Iaculis quisque ligula platea nibh. Sit augue tempus aliquet sollicitudin in nunc purus at. Tincidunt sit egestas nibh nullam placerat sociis magna. "
+    },
+    {
+      "heading": "What is the difference between digital and physical deposits?",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida at massa laoreet facilisi ac nisl convallis. Egestas porta hac sed etiam sem tempus cras varius. Nunc sed lorem aliquam justo, amet porttitor hac sed nunc. Pulvinar pharetra eget eleifend aliquam. Gravida a risus cras luctus dignissim tristique cras aliquet. Iaculis quisque ligula platea nibh. Sit augue tempus aliquet sollicitudin in nunc purus at. Tincidunt sit egestas nibh nullam placerat sociis magna. "
+    },
+    {
+      "heading": "Where is your data stored?",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida at massa laoreet facilisi ac nisl convallis. Egestas porta hac sed etiam sem tempus cras varius. Nunc sed lorem aliquam justo, amet porttitor hac sed nunc. Pulvinar pharetra eget eleifend aliquam. Gravida a risus cras luctus dignissim tristique cras aliquet. Iaculis quisque ligula platea nibh. Sit augue tempus aliquet sollicitudin in nunc purus at. Tincidunt sit egestas nibh nullam placerat sociis magna. "
+    },
+    {
+      "heading": "How do source code escrow works?",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida at massa laoreet facilisi ac nisl convallis. Egestas porta hac sed etiam sem tempus cras varius. Nunc sed lorem aliquam justo, amet porttitor hac sed nunc. Pulvinar pharetra eget eleifend aliquam. Gravida a risus cras luctus dignissim tristique cras aliquet. Iaculis quisque ligula platea nibh. Sit augue tempus aliquet sollicitudin in nunc purus at. Tincidunt sit egestas nibh nullam placerat sociis magna. "
+    },
+    {
+      "heading": "How is it different from a hash?",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida at massa laoreet facilisi ac nisl convallis. Egestas porta hac sed etiam sem tempus cras varius. Nunc sed lorem aliquam justo, amet porttitor hac sed nunc. Pulvinar pharetra eget eleifend aliquam. Gravida a risus cras luctus dignissim tristique cras aliquet. Iaculis quisque ligula platea nibh. Sit augue tempus aliquet sollicitudin in nunc purus at. Tincidunt sit egestas nibh nullam placerat sociis magna. "
+    }
+  ],
+  "solutions": [
+    {
+      "name": "Deposit",
+      "content": "Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.",
+      "readMorePath": "/solutions",
+      "callBackText": "Protect your innovations",
+      "callBackPath": "/"
+    },
+    {
+      "name": "Deposit",
+      "content": "Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.",
+      "readMorePath": "/solutions",
+      "callBackText": "Protect your innovations",
+      "callBackPath": "/"
+    },
+    {
+      "name": "Deposit",
+      "content": "Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.",
+      "readMorePath": "/solutions",
+      "callBackText": "Protect your innovations",
+      "callBackPath": "/"
+    },
+    {
+      "name": "Deposit",
+      "content": "Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.",
+      "readMorePath": "/solutions",
+      "callBackText": "Protect your innovations",
+      "callBackPath": "/"
+    },
+    {
+      "name": "Deposit",
+      "content": "Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.",
+      "readMorePath": "/solutions",
+      "callBackText": "Protect your innovations",
+      "callBackPath": "/"
+    },
+    {
+      "name": "Deposit",
+      "content": "Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.",
+      "readMorePath": "/solutions",
+      "callBackText": "Protect your innovations",
+      "callBackPath": "/"
+    }
+  ]
+}
