@@ -15,6 +15,7 @@ export default function Home(props) {
       <Head>
         <title>Vaultinum — Protect your innovations and investments</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="robots" content="noindex" />
       </Head>
       <section className="intro">
         <div>

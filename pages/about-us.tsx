@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import ButtonLink from '../components/common/ButtonLink';
 import ButtonLinkContrast from '../components/common/ButtonLinkContrast';
 import Container from '../components/common/Container';
@@ -5,6 +6,11 @@ import Container from '../components/common/Container';
 export default function AboutVaultinum() {
   return (
     <>
+      <Head>
+        <title>Vaultinum — About us</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="robots" content="noindex" />
+      </Head>
       <Container>
         <section className="about-us-intro">
           <h2>About us</h2>
