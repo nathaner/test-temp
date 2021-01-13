@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Heading from '../components/common/Heading';
 
 export default function TermsAndConditions() {
   return (
@@ -9,7 +10,7 @@ export default function TermsAndConditions() {
         <meta name="robots" content="noindex" />
       </Head>
 
-      <h2>Terms and Conditions</h2>
+      <Heading>Terms and Conditions</Heading>
     </>
   );
 }

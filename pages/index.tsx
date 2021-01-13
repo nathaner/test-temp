@@ -5,6 +5,7 @@ import Accordion from '../components/Accordion';
 import ButtonLinkContrast from '../components/common/ButtonLinkContrast';
 import ButtonLinkOutlined from '../components/common/ButtonLinkOutlined';
 import Container from '../components/common/Container';
+import Heading from '../components/common/Heading';
 import WaveSection from '../components/WaveSection';
 
 import en from '../locales/en/homepage.json';
@@ -28,7 +29,7 @@ export default function Home(props) {
         </video>
       </section>
       <Container>
-        <h2>Solutions</h2>
+        <Heading>Solutions</Heading>
         <div className="home-solutions-grid">
           {props.solutions.map((solution, index) => (
             <div className="home-solution" key={index}>
@@ -45,11 +46,8 @@ export default function Home(props) {
             </div>
           ))}
         </div>
-        <Link href="/solutions">
-          <a className="link-bg all-solutions">Find your solution</a>
-        </Link>
         <section className="customers-sample">
-          <h2>Trusted by notorious companies</h2>
+          <Heading>Trusted by notorious companies</Heading>
           <p>Beyond services, an unforgeable proof of trust for decades...</p>
           <div className="customers-grid">
             <div>
@@ -65,7 +63,7 @@ export default function Home(props) {
           <p>...among thousands</p>
         </section>
         <section className="safety">
-          <h2>How safe is it?</h2>
+          <Heading>How safe is it?</Heading>
           <div className="safety">
             <div className="row">
               <div>
@@ -136,15 +134,15 @@ export default function Home(props) {
           <div className="benefit"></div>
         </section>
         <section>
-          <h2>Pricing</h2>
+          <Heading>Pricing</Heading>
         </section>
         <section>
-          <h2>Your questions answered</h2>
+          <Heading>Your questions answered</Heading>
           <Accordion data={props.accordion} />
         </section>
       </Container>
       <WaveSection>
-        <h2>Want to get in touch?</h2>
+        <Heading>Want to get in touch?</Heading>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, sed
           eget diam ut. Gravida sed integer eros adipiscing felis non enim.

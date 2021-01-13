@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Heading from '../components/common/Heading';
 
 export default function PrivacyPolicy() {
   return (
@@ -8,7 +9,7 @@ export default function PrivacyPolicy() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="robots" content="noindex" />
       </Head>
-      <h2>Privacy Policy</h2>
+      <Heading>Privacy Policy</Heading>
     </>
   );
 }

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Container from '../components/common/Container';
+import Heading from '../components/common/Heading';
 
 export default function Contact() {
   return (
@@ -11,7 +12,7 @@ export default function Contact() {
       </Head>
       <Container>
         <section>
-          <h2>You are...</h2>
+          <Heading>You are...</Heading>
         </section>
       </Container>
     </>

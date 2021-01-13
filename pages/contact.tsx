@@ -2,6 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import Button from '../components/common/Button';
 import Container from '../components/common/Container';
+import Heading from '../components/common/Heading';
 
 export default function Contact() {
   return (
@@ -13,7 +14,7 @@ export default function Contact() {
       </Head>
       <Container>
         <section>
-          <h2>Contact us</h2>
+          <Heading>Contact us</Heading>
           <p>
             We are eager to discuss your business needs and answer any questions
             you may have. Enter your details and we’ll get back to you shortly.

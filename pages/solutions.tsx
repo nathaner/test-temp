@@ -2,6 +2,7 @@ import Head from 'next/head';
 import ButtonLink from '../components/common/ButtonLink';
 import ButtonLinkContrast from '../components/common/ButtonLinkContrast';
 import Container from '../components/common/Container';
+import Heading from '../components/common/Heading';
 
 export default function AboutVaultinum() {
   return (
@@ -14,11 +15,7 @@ export default function AboutVaultinum() {
       <main className="solutions">
         <Container>
           <section>
-            <h1>Solutions</h1>
-          </section>
-
-          <section>
-            <h2>Deposit</h2>
+            <Heading>Deposit</Heading>
 
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -32,7 +29,7 @@ export default function AboutVaultinum() {
             </div>
           </section>
           <section>
-            <h2>Escrow agreement</h2>
+            <Heading>Escrow agreement</Heading>
 
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -46,7 +43,7 @@ export default function AboutVaultinum() {
             </div>
           </section>
           <section>
-            <h2>Secure tranfer</h2>
+            <Heading>Secure tranfer</Heading>
 
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -60,7 +57,7 @@ export default function AboutVaultinum() {
             </div>
           </section>
           <section>
-            <h2>Timestamping</h2>
+            <Heading>Timestamping</Heading>
 
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -74,7 +71,7 @@ export default function AboutVaultinum() {
             </div>
           </section>
           <section>
-            <h2>GDPR</h2>
+            <Heading>GDPR</Heading>
 
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -88,7 +85,7 @@ export default function AboutVaultinum() {
             </div>
           </section>
           <section>
-            <h2>Software due diligence</h2>
+            <Heading>Software due diligence</Heading>
 
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -121,7 +118,7 @@ export default function AboutVaultinum() {
 
         <section className="more-info">
           <Container>
-            <h2>Need more information?</h2>
+            <Heading>Need more information?</Heading>
 
             <div className="grid">
               <ButtonLink href="/">White papers</ButtonLink>

@@ -2,6 +2,8 @@ import Head from 'next/head';
 import ButtonLink from '../components/common/ButtonLink';
 import ButtonLinkContrast from '../components/common/ButtonLinkContrast';
 import Container from '../components/common/Container';
+import Heading from '../components/common/Heading';
+import HeadingCenter from '../components/common/HeadingCenter';
 
 export default function AboutVaultinum() {
   return (
@@ -13,7 +15,7 @@ export default function AboutVaultinum() {
       </Head>
       <Container>
         <section className="about-us-intro">
-          <h2>About us</h2>
+          <Heading>About us</Heading>
           <div className="grid">
             <div>
               <p>
@@ -50,7 +52,7 @@ export default function AboutVaultinum() {
           </div>
         </section>
         <section>
-          <h2 className="heading-center">For 40 years</h2>
+          <HeadingCenter>For 40 years</HeadingCenter>
           <p className="text-center">
             Vaultinum experts are committed to protecting the intellectual
             property of creators.
@@ -63,7 +65,7 @@ export default function AboutVaultinum() {
           </p>
         </section>
         <section className="text-center why-vaultinum">
-          <h2 className="heading-center">Why Vaultinum?</h2>
+          <HeadingCenter>Why Vaultinum?</HeadingCenter>
           <div className="grid">
             <div>
               <h3>The traditional way of digital asset protection</h3>
@@ -102,7 +104,7 @@ export default function AboutVaultinum() {
             ></path>
           </svg>
         </div>
-        <h2>Need more information?</h2>
+        <Heading>Need more information?</Heading>
         <ButtonLinkContrast href="/contact">Contact us</ButtonLinkContrast>
       </section>
     </>

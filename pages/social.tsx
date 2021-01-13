@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import Heading from '../components/common/Heading';
 
 export default function Social() {
   return (
@@ -10,7 +11,7 @@ export default function Social() {
         <meta name="robots" content="noindex" />
       </Head>
       <section>
-        <h2>Follow us around</h2>
+        <Heading>Follow us around</Heading>
         <p>Want to know all everything about intellectual property?</p>
       </section>
     </>
