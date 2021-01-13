@@ -11,6 +11,10 @@ export default function Contact() {
         <title>Vaultinum — Contact us</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="robots" content="noindex" />
+        <meta
+          name="Description"
+          content="Vaultinum answers to any question you may have regarding its solutions or intellectual property."
+        />
       </Head>
       <Container>
         <section>

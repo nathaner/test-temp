@@ -8,6 +8,7 @@ export default function TermsAndConditions() {
         <title>Vaultinum — Terms and conditions</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="robots" content="noindex" />
+        <meta name="Description" content="Read more about the terms and conditions of Vaultinum." />
       </Head>
 
       <Heading>Terms and Conditions</Heading>

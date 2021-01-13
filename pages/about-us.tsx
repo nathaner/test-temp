@@ -12,6 +12,7 @@ export default function AboutVaultinum() {
         <title>Vaultinum — About us</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="robots" content="noindex" />
+        <meta name="Description" content="Vaultinum brings the modern web to intellectual property." />
       </Head>
       <Container>
         <section className="about-us-intro">

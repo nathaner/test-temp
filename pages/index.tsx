@@ -17,6 +17,10 @@ export default function Home(props) {
         <title>Vaultinum — Protect your innovations and investments</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="robots" content="noindex" />
+        <meta
+          name="Description"
+          content="Vaultinum protects your innovations and investments through dposist and escrow agreements."
+        />
       </Head>
       <section className="intro">
         <div>

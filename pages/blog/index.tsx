@@ -23,19 +23,20 @@ async function getPosts() {
 export const getStaticProps = async ({ params }) => {
   const posts = await getPosts();
   return {
-    props: { posts },
+    props: { revalidate: 10, posts },
   };
 };
 
 export const Blog: React.FC<{ posts: Post[] }> = (props) => {
   const { posts } = props;
-    
+
   return (
     <>
       <Head>
         <title>Vaultinum Blog</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="robots" content="noindex" />
+        <meta name="Description" content="Vaultinum blog helps understand intellectual property in depth." />
       </Head>
       <Container>
         <main className="blog">
