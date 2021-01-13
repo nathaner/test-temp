@@ -1,42 +1,42 @@
 form {
-    display: inline-block;
-    margin: 20px auto;
-}
+  display: inline-block;
+  margin: 20px auto;
 
-form button.btn {
+  button.btn {
     display: block;
     margin: auto;
-}
+  }
 
-.form-control {
+  .form-control {
     margin: 30px auto;
-}
+  }
 
-label {
+  label {
     display: block;
     transition: var(--transition-duration);
     margin-bottom: 10px;
-}
+  }
 
-label span.optional {
+  label span.optional {
     font-style: italic;
     color: var(--color-grey);
-}
+  }
 
-input {
+  input {
     width: 25ch;
     height: 30px;
     border: 1px solid var(--color-lightgrey);
     border-radius: 5px;
     margin-left: 15px;
-}
+  }
 
-textarea {
+  textarea {
     border: 1px solid var(--color-lightgrey);
     border-radius: 5px;
-}
+  }
 
-input:focus ~ label {
+  input:focus ~ label {
     top: 0;
     left: 0;
+  }
 }

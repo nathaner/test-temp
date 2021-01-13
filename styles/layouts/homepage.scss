@@ -9,10 +9,10 @@
 .customers-sample img {
   max-width: 200px;
   max-height: 130px;
-}
 
-.customers-sample p:last-child {
-  text-align: center;
+  p:last-child {
+    text-align: center;
+  }
 }
 
 .intro {
@@ -21,41 +21,43 @@
   max-width: 1400px;
   margin: auto;
   font-weight: bold;
+
+  div {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 30%;
+    left: 0;
+    height: 100%;
+  }
+
+  div h1 {
+    font-size: 3.5rem;
+  }
+
+  div p {
+    font-size: 2.5rem;
+  }
+
+  video {
+    max-width: 100%;
+  }
 }
 
-.intro div {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  top: 30%;
-  left: 0;
-  height: 100%;
-}
+.safety {
+  .row {
+    display: flex;
+    align-items: center;
+    margin: 2rem auto;
+  }
 
-.intro div h1 {
-  font-size: 3.5rem;
-}
+  .row div {
+    margin: 0 40px;
+  }
 
-.intro div p {
-  font-size: 2.5rem;
-}
-
-.intro video {
-  max-width: 100%;
-}
-
-.safety .row {
-  display: flex;
-  align-items: center;
-  margin: 2rem auto;
-}
-
-.safety .row div {
-  margin: 0 40px;
-}
-
-.safety .row div img {
-  height: 130px;
+  .row div img {
+    height: 130px;
+  }
 }
 
 .all-solutions {
