@@ -32,7 +32,7 @@ const FOOTER_ITEMS = [
     items: [
       {
         name: 'Blog',
-        path: '/',
+        path: '/blog',
       },
       {
         name: 'White papers',

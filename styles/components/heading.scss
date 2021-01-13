@@ -1,4 +1,4 @@
-h2 {
+h2.main-heading {
   font-size: 1.8rem;
   font-weight: normal;
   text-transform: uppercase;
@@ -6,7 +6,7 @@ h2 {
   margin: 3rem auto;
 }
 
-h2:not(.heading-center)::after {
+h2.main-heading:not(.heading-center):after {
   content: '';
   display: block;
   width: 80px;
