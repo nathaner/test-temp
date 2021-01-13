@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import BaseLayout from '../layouts/BaseLayout';
 
 export default function MyApp(props) {
