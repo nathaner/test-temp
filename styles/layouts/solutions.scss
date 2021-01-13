@@ -1,0 +1,41 @@
+.solutions {
+  .kys-levels {
+    background: linear-gradient(45deg, rgb(57, 110, 142), rgb(105, 138, 163));
+    padding: 100px 30px;
+    text-align: center;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+      column-gap: 100px;
+      justify-content: space-around;
+      color: white;
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      color: white;
+
+      margin-bottom: 40px;
+    }
+  }
+
+  .btn {
+      display: inline-block;
+      margin: auto;
+  }
+
+  .more-info {
+      margin-bottom: 50px;
+      h2 {
+          text-align: center;
+          &::after {
+              display: none;
+          }
+      }
+      .grid {
+          display: grid;
+          grid-template-columns: repeat(3, auto);
+          column-gap: 100px;
+      }
+  }
+}
