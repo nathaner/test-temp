@@ -29,7 +29,6 @@ export const getStaticProps = async ({ params }) => {
 
 export const Blog: React.FC<{ posts: Post[] }> = (props) => {
   const { posts } = props;
-    console.log(props);
     
   return (
     <>

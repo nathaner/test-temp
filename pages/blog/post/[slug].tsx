@@ -44,8 +44,6 @@ type Post = {
 };
 
 const Post: React.FC<{ post: Post }> = (props) => {
-  console.log(props);
-
   const { post } = props;
   const [enableLoadComments, setEnableLoadComments] = useState<boolean>(true);
 
