@@ -1,83 +1,87 @@
 import ButtonLink from '../components/common/ButtonLink';
 import ButtonLinkContrast from '../components/common/ButtonLinkContrast';
+import Container from '../components/common/Container';
 
 export default function AboutVaultinum() {
   return (
     <>
-      <section className="about-us-intro">
-        <h2>About us</h2>
-        <div className="grid">
-          <div>
-            <p>
-              Vaultinum (formerly CELOG) is a trusted, independent, and neutral
-              third party specialized in digital asset protection.
-            </p>
+      <Container>
+        <section className="about-us-intro">
+          <h2>About us</h2>
+          <div className="grid">
+            <div>
+              <p>
+                Vaultinum (formerly CELOG) is a trusted, independent, and
+                neutral third party specialized in digital asset protection.
+              </p>
 
-            <p>
-              The dematerialization of information and exchanges has contributed
-              to the significant increase in digital disputes. It has created
-              new challenges with increased risk of data loss, theft , and
-              misuse.
-            </p>
+              <p>
+                The dematerialization of information and exchanges has
+                contributed to the significant increase in digital disputes. It
+                has created new challenges with increased risk of data loss,
+                theft , and misuse.
+              </p>
 
-            <p>
-              Our mission is to protect our clients’ most important assests and
-              to ensure their business continuity.
-            </p>
+              <p>
+                Our mission is to protect our clients’ most important assests
+                and to ensure their business continuity.
+              </p>
 
-            <p>
-              Through an unrivalled range of services, Vaultinum solves issues
-              related to the collection and analysis of evidence in a digital
-              environment.
-            </p>
+              <p>
+                Through an unrivalled range of services, Vaultinum solves issues
+                related to the collection and analysis of evidence in a digital
+                environment.
+              </p>
+            </div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/pVE92TNDwUk"
+              frameBorder={0}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen={true}
+            ></iframe>
           </div>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/pVE92TNDwUk"
-            frameBorder={0}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen={true}
-          ></iframe>
-        </div>
-      </section>
-      <section>
-        <h2 className="heading-center">For 40 years</h2>
-        <p className="text-center">
-          Vaultinum experts are committed to protecting the intellectual
-          property of creators.
-        </p>
-        <p className="text-center">
-          Thanks to its legal and technical competencies, our team is able to
-          assist our clients in their cases and offer them reliable and
-          effective probative solutions in accordance with state of the art, in
-          line with their needs.
-        </p>
-      </section>
-      <section className="text-center why-vaultinum">
-        <h2 className="heading-center">Why Vaultinum?</h2>
-        <div className="grid">
-          <div>
-            <h3>The traditional way of digital asset protection</h3>
-            <ul>
-              <li>Tedious and time-consuming manual solutions</li>
-              <li>Limited probative value</li>
-              <li>Individual services</li>
-              <li>Long processes with little to no support</li>
-            </ul>
+        </section>
+        <section>
+          <h2 className="heading-center">For 40 years</h2>
+          <p className="text-center">
+            Vaultinum experts are committed to protecting the intellectual
+            property of creators.
+          </p>
+          <p className="text-center">
+            Thanks to its legal and technical competencies, our team is able to
+            assist our clients in their cases and offer them reliable and
+            effective probative solutions in accordance with state of the art,
+            in line with their needs.
+          </p>
+        </section>
+        <section className="text-center why-vaultinum">
+          <h2 className="heading-center">Why Vaultinum?</h2>
+          <div className="grid">
+            <div>
+              <h3>The traditional way of digital asset protection</h3>
+              <ul>
+                <li>Tedious and time-consuming manual solutions</li>
+                <li>Limited probative value</li>
+                <li>Individual services</li>
+                <li>Long processes with little to no support</li>
+              </ul>
+            </div>
+            <div>
+              <h3>The Vaultinum services</h3>
+              <ul>
+                <li>Automanted and digital solutions</li>
+                <li>Unforgeable evidence</li>
+                <li>Collaborative platforms</li>
+                <li>High responsiveness with 24/7 assistance </li>
+              </ul>
+            </div>
           </div>
-          <div>
-            <h3>The Vaultinum services</h3>
-            <ul>
-              <li>Automanted and digital solutions</li>
-              <li>Unforgeable evidence</li>
-              <li>Collaborative platforms</li>
-              <li>High responsiveness with 24/7 assistance </li>
-            </ul>
-          </div>
-        </div>
-        <ButtonLink href="/replace">Get started</ButtonLink>
-      </section>
+          <ButtonLink href="/replace">Get started</ButtonLink>
+        </section>
+      </Container>
+
       <section className="wave-section">
         <div className="custom-shape-divider-top-1610045199">
           <svg
@@ -93,9 +97,7 @@ export default function AboutVaultinum() {
           </svg>
         </div>
         <h2>Need more information?</h2>
-        <ButtonLinkContrast href="/contact">
-          Contact us
-        </ButtonLinkContrast>
+        <ButtonLinkContrast href="/contact">Contact us</ButtonLinkContrast>
       </section>
     </>
   );

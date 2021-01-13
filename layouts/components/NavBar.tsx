@@ -23,7 +23,7 @@ const MENU_ITEMS = [
 
 export default function NavBar() {
   return (
-    <nav className="wrapped">
+    <nav className="container">
       <div>
         <Link href="/">
           <a>

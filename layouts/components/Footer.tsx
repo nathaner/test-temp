@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Container from '../../components/common/Container';
 
 const FOOTER_ITEMS = [
   {
@@ -68,43 +69,44 @@ const FOOTER_ITEMS = [
 ];
 
 export default function Footer() {
-
   const handleChange = (option) => {
-    window.location.assign(option)
-  }
+    window.location.assign(option);
+  };
   return (
-    <footer className="wrapped">
-      <div className="grid">
-        <div>
-          <img
-            src="img/vaultinum-logo.png"
-            alt="Vaultinum Logo"
-            className="logo"
-          />
-          <p className="footer-moto">Since 1976</p>
-          <select onChange={(option) => handleChange(option)}>
-            <option value="/">English</option>
-            <option value="/fr">French</option>
-          </select>
-        </div>
-        {FOOTER_ITEMS.map((item, index) => (
-          <div key={index}>
-            <h4>{item.heading}</h4>
-            <ul>
-              {item.items.map((link, index) => (
-                <li key={index}>
-                  <Link href={link.path}>
-                    <a>{link.name}</a>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+    <footer>
+      <Container>
+        <div className="grid">
+          <div>
+            <img
+              src="img/vaultinum-logo.png"
+              alt="Vaultinum Logo"
+              className="logo"
+            />
+            <p className="footer-moto">Since 1976</p>
+            <select onChange={(option) => handleChange(option)}>
+              <option value="/">English</option>
+              <option value="/fr">French</option>
+            </select>
           </div>
-        ))}
-      </div>
-      <p className="copyright">
-        &copy; Vaultinum {new Date().getFullYear()} | All rights reserved.
-      </p>
+          {FOOTER_ITEMS.map((item, index) => (
+            <div key={index}>
+              <h4>{item.heading}</h4>
+              <ul>
+                {item.items.map((link, index) => (
+                  <li key={index}>
+                    <Link href={link.path}>
+                      <a>{link.name}</a>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <p className="copyright">
+          &copy; Vaultinum {new Date().getFullYear()} | All rights reserved.
+        </p>
+      </Container>
     </footer>
   );
 }

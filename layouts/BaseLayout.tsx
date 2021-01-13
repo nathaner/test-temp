@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 export default function BaseLayout({ children }) {
   return <>
       <NavBar />
-      <main className="wrapper">
+      <main>
       {children}
       </main>
       <Footer />

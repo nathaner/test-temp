@@ -41,8 +41,6 @@
 }
 
 .intro video {
-  position: relative;
-  z-index: -10;
   max-width: 100%;
 }
 

@@ -1,4 +1,4 @@
-.wrapper section, footer, nav {
-  padding-left: var(--padding-side);
-  padding-right: var(--padding-side);
+.container {
+  max-width: 1024px;
+  margin: auto;
 }
