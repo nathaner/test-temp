@@ -1,19 +1,18 @@
-import Head from 'next/head';
 import ButtonLink from '../components/common/ButtonLink';
 import ButtonLinkContrast from '../components/common/ButtonLinkContrast';
 import Container from '../components/common/Container';
+import Head from '../components/common/Head';
 import Heading from '../components/common/Heading';
 import HeadingCenter from '../components/common/HeadingCenter';
 
 export default function AboutVaultinum() {
   return (
     <>
-      <Head>
-        <title>Vaultinum — About us</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="robots" content="noindex" />
-        <meta name="Description" content="Vaultinum brings the modern web to intellectual property." />
-      </Head>
+      <Head
+        title="Vaultinum — About us"
+        description="Vaultinum brings the modern web to intellectual property."
+      />
+
       <Container>
         <section className="about-us-intro">
           <Heading>About us</Heading>

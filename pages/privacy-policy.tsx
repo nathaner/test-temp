@@ -1,18 +1,13 @@
-import Head from 'next/head';
+import Head from '../components/common/Head';
 import Heading from '../components/common/Heading';
 
 export default function PrivacyPolicy() {
   return (
     <>
-      <Head>
-        <title>Vaultinum — Privacy policy</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="robots" content="noindex" />
-        <meta
-          name="Description"
-          content="Vaultinum respects your privacy, learn more about what we do with your data."
-        />
-      </Head>
+      <Head
+        title="Vaultinum — Privacy policy"
+        description="Vaultinum respects your privacy, learn more about what we do with your data."
+      />
       <Heading>Privacy Policy</Heading>
     </>
   );

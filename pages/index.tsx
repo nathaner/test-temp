@@ -1,10 +1,10 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import React from 'react';
 import Accordion from '../components/Accordion';
 import ButtonLinkContrast from '../components/common/ButtonLinkContrast';
 import ButtonLinkOutlined from '../components/common/ButtonLinkOutlined';
 import Container from '../components/common/Container';
+import Head from '../components/common/Head';
 import Heading from '../components/common/Heading';
 import WaveSection from '../components/WaveSection';
 
@@ -13,15 +13,10 @@ import en from '../locales/en/homepage.json';
 export default function Home(props) {
   return (
     <>
-      <Head>
-        <title>Vaultinum — Protect your innovations and investments</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="robots" content="noindex" />
-        <meta
-          name="Description"
-          content="Vaultinum protects your innovations and investments through dposist and escrow agreements."
-        />
-      </Head>
+    <Head
+        title="Vaultinum — Protect your innovations and investments"
+        description="Vaultinum protects your innovations and investments through dposist and escrow agreements."
+      />
       <section className="intro">
         <div>
           <h1>Vaultinum</h1>

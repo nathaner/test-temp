@@ -1,21 +1,16 @@
-import Head from 'next/head';
 import React from 'react';
 import Button from '../components/common/Button';
 import Container from '../components/common/Container';
 import Heading from '../components/common/Heading';
+import Head from '../components/common/Head';
 
 export default function Contact() {
   return (
     <>
-      <Head>
-        <title>Vaultinum — Contact us</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="robots" content="noindex" />
-        <meta
-          name="Description"
-          content="Vaultinum answers to any question you may have regarding its solutions or intellectual property."
-        />
-      </Head>
+      <Head
+        title="Vaultinum — Contact us"
+        description="Vaultinum answers to any question you may have regarding its solutions or intellectual property."
+      />
       <Container>
         <section>
           <Heading>Contact us</Heading>
