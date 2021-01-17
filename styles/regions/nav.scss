@@ -1,38 +1,107 @@
-nav {
-  display: grid;
-  grid-template-columns: auto minmax(200px, 70%) auto;
-  column-gap: 20px;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 5px;
-  margin-bottom: 10px;
-
-  .logo {
-    max-width: 140px;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    font-size: 1.1rem;
+.navbar {
+    padding: 1rem 1rem;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    li {
-      text-align: center;
+.navbar svg {
+    width: 48px;
+}
+
+.navbar img {
+    max-width: 130px;
+}
+
+.navbar .menu {
+    background: white;
+    box-shadow: -5px 0px 10px rgb(185, 185, 185);
+    height: 100%;
+    max-width: 0%;
+    min-width: 0%;
+    padding: 1rem 0;
+    position: fixed;
+    right: 0;
+    text-align: right;
+    top: 0;
+    transition: all 0.3s ease-out;
+    z-index: 100;
+}
+
+.navbar .menu.open {
+    max-width: 70%;
+    min-width: 70%;
+    padding: 1rem 2.5rem;
+}
+
+.navbar .menu ul {
+    text-align: left;
+}
+
+.navbar ul a:not(.btn) {
+    display: block;
+    border-bottom: 1px solid grey;
+    padding: 2rem 1rem;
+    text-decoration: none;
+}
+
+.navbar ul li:last-of-type {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.navbar ul li:nth-last-of-type(2) a {
+    border-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        padding: 2rem 0;
+    }
+    .navbar .open {
+        display: none;
     }
 
-    a::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 3px;
-      background: var(--color-primary);
-      transition: var(--transition-duration);
+    .navbar .close {
+        display: none;
     }
 
-    a:hover::after {
-      width: 100%;
+    .navbar .menu {
+        position: static;
+        box-shadow: none;
+        min-width: auto;
+        max-width: 100%;
+        width: 70%;
+        padding: 0;
     }
-  }
+
+    .navbar .menu ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    .navbar ul li a:not(.btn) {
+        border: 0;
+    }
+
+    .navbar .menu a:not(.btn)::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 3px;
+        background: var(--color-primary);
+        transition: width 0.3s;
+    }
+
+    .navbar .menu a:not(.btn):hover::after {
+        width: 100%;
+    }
+
+    .navbar ul li:last-of-type {
+        margin-top: 0;
+        text-align: center;
+    }
 }
