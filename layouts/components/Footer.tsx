@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import en from "../../locales/en/en";
 import fr from "../../locales/fr/fr";
 
-export default function Footer({ currentYear }: { currentYear: number }) {
+export default function Footer() {
     const router = useRouter();
     const { locale } = router;
 
@@ -117,16 +117,8 @@ export default function Footer({ currentYear }: { currentYear: number }) {
                         Français
                     </option>
                 </select>
-                <p className="copyright">&copy; Vaultinum {currentYear} | All rights reserved.</p>
+                <p className="copyright">&copy; Vaultinum {new Date().getFullYear()} | All rights reserved.</p>
             </div>
         </footer>
     );
-}
-
-export function getStaticProps() {
-    return {
-        props: {
-            currentYear: new Date().getFullYear(),
-        },
-    };
 }
