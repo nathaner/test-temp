@@ -3,14 +3,18 @@ import React from "react";
 import Accordion from "../components/Accordion";
 import ButtonLinkContrast from "../components/common/ButtonLinkContrast";
 import ButtonLinkOutlined from "../components/common/ButtonLinkOutlined";
-import Container from "../components/common/Container";
 import Head from "../components/common/Head";
 import Heading from "../components/common/Heading";
 import BottomSection from "../components/BottomSection";
 
-import en from "../locales/en/homepage.json";
+import en from "../locales/en/en";
+import fr from "../locales/fr/fr";
+import { useRouter } from 'next/router';
 
-export default function Home(props) {
+export default function Home() {
+    const router = useRouter();
+    const { locale } = router;
+    const t = locale === "en" ? en : fr;
     return (
         <>
             <Head
@@ -23,17 +27,14 @@ export default function Home(props) {
                     <p>Protect your innovations and investments</p>
                 </div>
                 <video autoPlay={true} muted={true}>
-                    <source
-                        src="videos/vaultinum-intro-video.mp4"
-                        type="video/mp4"
-                    />
+                    <source src="videos/vaultinum-intro-video.mp4" type="video/mp4" />
                     Sorry, your browser doesn't support embedded videos.
                 </video>
             </section>
             <section className="container block">
                 <Heading>Solutions</Heading>
                 <div className="home-solutions-grid">
-                    {props.solutions.map((solution, index) => (
+                    {t.homepage.solutions.map((solution, index) => (
                         <div className="home-solution" key={index}>
                             <h3>{solution.name}</h3>
                             <p>
@@ -51,10 +52,7 @@ export default function Home(props) {
             </section>
             <section className="container block customers-sample">
                 <Heading>Trusted by notorious companies</Heading>
-                <p>
-                    Beyond services, an unforgeable proof of trust for
-                    decades...
-                </p>
+                <p>Beyond services, an unforgeable proof of trust for decades...</p>
                 <div className="grid grid-1x3">
                     <div>
                         <img src="img/airbus-logo.png" alt="Airbus logo" />
@@ -63,11 +61,7 @@ export default function Home(props) {
                         <img src="img/Total-logo.png" alt="Total logo" />
                     </div>
                     <div>
-                        <img
-                            className="w-max"
-                            src="img/cnrs-logo.png"
-                            alt="CNRS logo"
-                        />
+                        <img className="w-max" src="img/cnrs-logo.png" alt="CNRS logo" />
                     </div>
                 </div>
                 <p>...among thousands</p>
@@ -80,10 +74,8 @@ export default function Home(props) {
                         <div>
                             <h3>ISO 27001 certified</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Iaculis diam egestas sapien,
-                                nisi, eleifend. Diam faucibus ante at sed sit
-                                ultricies tristique lobortis
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis diam egestas sapien,
+                                nisi, eleifend. Diam faucibus ante at sed sit ultricies tristique lobortis
                             </p>
                         </div>
                     </article>
@@ -92,10 +84,8 @@ export default function Home(props) {
                         <div>
                             <h3>GDPR Ready</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Iaculis diam egestas sapien,
-                                nisi, eleifend. Diam faucibus ante at sed sit
-                                ultricies tristique lobortis
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis diam egestas sapien,
+                                nisi, eleifend. Diam faucibus ante at sed sit ultricies tristique lobortis
                             </p>
                         </div>
                     </article>
@@ -104,25 +94,18 @@ export default function Home(props) {
                         <div>
                             <h3>Secure algorithms</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Iaculis diam egestas sapien,
-                                nisi, eleifend. Diam faucibus ante at sed sit
-                                ultricies tristique lobortis
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis diam egestas sapien,
+                                nisi, eleifend. Diam faucibus ante at sed sit ultricies tristique lobortis
                             </p>
                         </div>
                     </article>
                     <article className="media">
-                        <img
-                            src="img/servers.png"
-                            alt="Servers located in France"
-                        />
+                        <img src="img/servers.png" alt="Servers located in France" />
                         <div>
                             <h3>All data are stored in France</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Iaculis diam egestas sapien,
-                                nisi, eleifend. Diam faucibus ante at sed sit
-                                ultricies tristique lobortis
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis diam egestas sapien,
+                                nisi, eleifend. Diam faucibus ante at sed sit ultricies tristique lobortis
                             </p>
                         </div>
                     </article>
@@ -131,10 +114,8 @@ export default function Home(props) {
                         <div>
                             <h3>eIDAS Ready</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Iaculis diam egestas sapien,
-                                nisi, eleifend. Diam faucibus ante at sed sit
-                                ultricies tristique lobortis
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis diam egestas sapien,
+                                nisi, eleifend. Diam faucibus ante at sed sit ultricies tristique lobortis
                             </p>
                         </div>
                     </article>
@@ -145,34 +126,18 @@ export default function Home(props) {
             </section>
             <section className="container block">
                 <Heading>Your questions answered</Heading>
-                <Accordion data={props.accordion} />
+                <Accordion data={t.homepage.accordion} />
             </section>
             <BottomSection>
-                <Heading>Want to get in touch?</Heading>
+                <Heading>{t.general.wantToGetInTouch}</Heading>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc, sed eget diam ut. Gravida sed integer eros adipiscing
-                    felis non enim. Pretium eget et diam cursus dignissim odio
-                    pulvinar sit dictum. Eget in arcu proin sed interdum orci
-                    odio. Platea nulla mauris orci ut morbi id risus auctor enim
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc, sed eget diam ut. Gravida sed integer
+                    eros adipiscing felis non enim. Pretium eget et diam cursus dignissim odio pulvinar sit dictum. Eget
+                    in arcu proin sed interdum orci odio. Platea nulla mauris orci ut morbi id risus auctor enim
                     suscipit.
                 </p>
-                <ButtonLinkContrast href="/contact">
-                    Contact us
-                </ButtonLinkContrast>
+                <ButtonLinkContrast href="/contact">{t.general.contactUs}</ButtonLinkContrast>
             </BottomSection>
         </>
     );
-}
-
-export function getStaticProps({ locale }) {
-    const solutions = en.solutions;
-    const accordion = en.accordion;
-
-    return {
-        props: {
-            solutions,
-            accordion,
-        },
-    };
 }

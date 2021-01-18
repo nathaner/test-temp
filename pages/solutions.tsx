@@ -12,8 +12,7 @@ export default function AboutVaultinum() {
         description="Vaultinum has solutions corresponding to any need you may have regarding the intellectual property of your innovations."
       />
       <main className="solutions">
-        <Container>
-          <section>
+          <section className="container block">
             <Heading>Deposit</Heading>
 
             <p>
@@ -27,7 +26,7 @@ export default function AboutVaultinum() {
               <ButtonLink href="/">Protect your IP</ButtonLink>
             </div>
           </section>
-          <section>
+          <section className="container block">
             <Heading>Escrow agreement</Heading>
 
             <p>
@@ -41,7 +40,7 @@ export default function AboutVaultinum() {
               <ButtonLink href="/">Ensure your technology</ButtonLink>
             </div>
           </section>
-          <section>
+          <section className="container block">
             <Heading>Secure tranfer</Heading>
 
             <p>
@@ -55,7 +54,7 @@ export default function AboutVaultinum() {
               <ButtonLink href="/">Secure your transfer</ButtonLink>
             </div>
           </section>
-          <section>
+          <section className="container block">
             <Heading>Timestamping</Heading>
 
             <p>
@@ -69,7 +68,7 @@ export default function AboutVaultinum() {
               <ButtonLink href="/">Certify your work</ButtonLink>
             </div>
           </section>
-          <section>
+          <section className="container block">
             <Heading>GDPR</Heading>
 
             <p>
@@ -83,7 +82,7 @@ export default function AboutVaultinum() {
               <ButtonLink href="/">Prove your compliance</ButtonLink>
             </div>
           </section>
-          <section>
+          <section className="container block">
             <Heading>Software due diligence</Heading>
 
             <p>
@@ -93,10 +92,9 @@ export default function AboutVaultinum() {
               nam, natus beatae?
             </p>
           </section>
-        </Container>
         <section className="kys-levels">
-          <Container>
-            <div className="grid">
+            <div className="container block">
+            <div className="grid grid-1x2">
               <div>
                 <h3>Self assessment level 1</h3>
                 KYS Level 1 evaluates technology health, IP risk, Cyber
@@ -112,19 +110,17 @@ export default function AboutVaultinum() {
             <ButtonLinkContrast href="/">
               Secure your investments
             </ButtonLinkContrast>
-          </Container>
+            </div>
         </section>
 
-        <section className="more-info">
-          <Container>
+        <section className="more-info container block">
             <Heading>Need more information?</Heading>
 
-            <div className="grid">
+            <div className="grid grid-1x3">
               <ButtonLink href="/">White papers</ButtonLink>
               <ButtonLink href="/">Webinars</ButtonLink>
               <ButtonLink href="/">Contact us</ButtonLink>
             </div>
-          </Container>
         </section>
       </main>
     </>

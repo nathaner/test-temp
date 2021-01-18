@@ -1,35 +1,41 @@
 import Link from "next/link";
 import { useState } from "react";
 import VaultinumLogo from "./VaultinumLogo";
-import classNames from "classnames"
+import classNames from "classnames";
+import { useRouter } from "next/router";
 
-const MENU_ITEMS = [
-    {
-        name: "You are",
-        path: "/you-are",
-    },
-    {
-        name: "Solutions",
-        path: "/solutions",
-    },
-    {
-        name: "About us",
-        path: "/about-us",
-    },
-    {
-        name: "Contact",
-        path: "/contact",
-    },
-];
+import en from "../../locales/en/en";
+import fr from "../../locales/fr/fr";
 
 export default function NavBar() {
+    const router = useRouter();
+    const { locale } = router;
+    const t = locale === "en" ? en : fr;
+
     const [open, setOpen] = useState(false);
 
     const handleOpen = () => {
-        console.log("ok");
-
         setOpen((open) => !open);
     };
+
+    const MENU_ITEMS = [
+        {
+            name: t.menu.youAre,
+            path: "/you-are",
+        },
+        {
+            name: t.menu.solutions,
+            path: "/solutions",
+        },
+        {
+            name: t.menu.aboutUs,
+            path: "/about-us",
+        },
+        {
+            name: t.menu.contact,
+            path: "/contact",
+        },
+    ];
 
     return (
         <nav className="navbar container">
@@ -46,12 +52,7 @@ export default function NavBar() {
                 className="toggler-open"
                 onClick={handleOpen}
             >
-                <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
             <div className={classNames("menu", { open })}>
                 <svg
@@ -62,12 +63,7 @@ export default function NavBar() {
                     className="toggler-close"
                     onClick={handleOpen}
                 >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M6 18L18 6M6 6l12 12"
-                    />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
                 <ul className="list-unstyled">
                     {MENU_ITEMS.map((item, index) => (
@@ -79,7 +75,7 @@ export default function NavBar() {
                     ))}
                     <li>
                         <a href="" className="btn primary">
-                            Sign in
+                            {t.general.signIn}
                         </a>
                     </li>
                 </ul>

@@ -1,77 +1,87 @@
 import Link from "next/link";
-import Container from "../../components/common/Container";
+import { useRouter } from "next/router";
 
-const FOOTER_ITEMS = [
-    {
-        heading: "Vaultinum",
-        items: [
-            {
-                name: "Home",
-                path: "/",
-            },
-            {
-                name: "Solutions",
-                path: "/solutions",
-            },
-            {
-                name: "You are",
-                path: "/you-are",
-            },
-            {
-                name: "About us",
-                path: "/about-us",
-            },
-            {
-                name: "Contact",
-                path: "/contact",
-            },
-        ],
-    },
-    {
-        heading: "Resources",
-        items: [
-            {
-                name: "Blog",
-                path: "/blog",
-            },
-            {
-                name: "White papers",
-                path: "/",
-            },
-        ],
-    },
-    {
-        heading: "Social",
-        items: [
-            {
-                name: "LinkedIn",
-                path: "/social",
-            },
-            {
-                name: "Facebook",
-                path: "/social",
-            },
-        ],
-    },
-    {
-        heading: "Legal",
-        items: [
-            {
-                name: "Terms and conditions",
-                path: "/terms-and-conditions",
-            },
-            {
-                name: "Privacy policy",
-                path: "/privacy-policy",
-            },
-        ],
-    },
-];
+import en from "../../locales/en/en";
+import fr from "../../locales/fr/fr";
 
 export default function Footer({ currentYear }: { currentYear: number }) {
-    const handleChange = (option) => {
-        window.location.assign(option);
+    const router = useRouter();
+    const { locale } = router;
+
+    const t = locale === "en" ? en : fr;
+
+    const changeLanguage = (e) => {
+        const locale = e.target.value;
+        router.push(router.pathname, router.asPath, { locale });
     };
+
+    const FOOTER_ITEMS = [
+        {
+            heading: "Vaultinum",
+            items: [
+                {
+                    name: t.general.home,
+                    path: "/",
+                },
+                {
+                    name: t.general.solutions,
+                    path: "/solutions",
+                },
+                {
+                    name: t.general.youAre,
+                    path: "/you-are",
+                },
+                {
+                    name: t.general.aboutUs,
+                    path: "/about-us",
+                },
+                {
+                    name: t.general.contact,
+                    path: "/contact",
+                },
+            ],
+        },
+        {
+            heading: "Resources",
+            items: [
+                {
+                    name: t.general.blog,
+                    path: "/blog",
+                },
+                {
+                    name: t.general.whitePapers,
+                    path: "/",
+                },
+            ],
+        },
+        {
+            heading: "Social",
+            items: [
+                {
+                    name: "LinkedIn",
+                    path: "/social",
+                },
+                {
+                    name: "Facebook",
+                    path: "/social",
+                },
+            ],
+        },
+        {
+            heading: "Legal",
+            items: [
+                {
+                    name: t.general.termsAndConditions,
+                    path: "/terms-and-conditions",
+                },
+                {
+                    name: t.general.privacyPolicy,
+                    path: "/privacy-policy",
+                },
+            ],
+        },
+    ];
+
     return (
         <footer className="footer">
             <div className="block container">
@@ -91,13 +101,22 @@ export default function Footer({ currentYear }: { currentYear: number }) {
                         </section>
                     ))}
                     <div className="brand">
-                        <img
-                            src="./img/vaultinum-logo.png"
-                            alt="Vaultinum logo"
-                        />
+                        <img src="./img/vaultinum-logo.png" alt="Vaultinum logo" />
                         <span>Since 1976</span>
                     </div>
                 </div>
+                <select
+                    onChange={changeLanguage}
+                    defaultValue={locale}
+                    className="text-white text-shadow-sm text-lg bg-transparent tracking-wide"
+                >
+                    <option className="text-black" value="en">
+                        English
+                    </option>
+                    <option className="text-black" value="fr">
+                        Français
+                    </option>
+                </select>
                 <p className="copyright">&copy; Vaultinum {currentYear} | All rights reserved.</p>
             </div>
         </footer>

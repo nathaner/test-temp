@@ -4,12 +4,9 @@
     padding: 100px 30px;
     text-align: center;
     .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
-      column-gap: 100px;
-      justify-content: space-around;
       color: white;
       margin-bottom: 40px;
+      gap: 0 5rem;
     }
 
     h3 {
@@ -31,11 +28,6 @@
           &::after {
               display: none;
           }
-      }
-      .grid {
-          display: grid;
-          grid-template-columns: repeat(3, auto);
-          column-gap: 100px;
       }
   }
 }

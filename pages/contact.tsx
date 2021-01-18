@@ -5,8 +5,15 @@ import Heading from "../components/common/Heading";
 import Head from "../components/common/Head";
 import Input from "../components/common/Input";
 import TextArea from "../components/common/TextArea";
+import { useRouter } from "next/router";
+
+import en from "../locales/en/en";
+import fr from "../locales/fr/fr";
 
 export default function Contact() {
+    const router = useRouter();
+    const { locale } = router;
+    const t = locale === "en" ? en : fr;
     return (
         <>
             <Head
@@ -16,38 +23,12 @@ export default function Contact() {
             <div className="container grid grid-1x2">
                 <section className="block">
                     <Heading>Contact us</Heading>
-                    <p>
-                        We are eager to discuss your business needs and answer
-                        any questions you may have. Enter your details and we’ll
-                        get back to you shortly.
-                    </p>
+                    <p>{t.contact.contactMessage}</p>
                     <form>
-                        <Input
-                            name="firstName"
-                            label="First name"
-                            type="text"
-                            id="firstName"
-                            optional
-                        />
-                        <Input
-                            name="lastName"
-                            label="Last name"
-                            type="lastName"
-                            id="lastName"
-                            optional
-                        />
-                        <Input
-                            name="email"
-                            label="Email"
-                            type="email"
-                            id="email"
-                        />
-                        <TextArea
-                            label="Message"
-                            name="message"
-                            id="message"
-                            rows={12}
-                        ></TextArea>
+                        <Input name="firstName" label="First name" type="text" id="firstName" optional />
+                        <Input name="lastName" label="Last name" type="lastName" id="lastName" optional />
+                        <Input name="email" label="Email" type="email" id="email" />
+                        <TextArea label="Message" name="message" id="message" rows={12}></TextArea>
                         <Button>Send</Button>
                     </form>
                 </section>

@@ -1,32 +1,32 @@
 {
   "accordion": [
     {
-      "heading": "Why should we create source code deposits?",
+      "heading": "Pourquoi faut-il déposer son code source ?",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida at massa laoreet facilisi ac nisl convallis. Egestas porta hac sed etiam sem tempus cras varius. Nunc sed lorem aliquam justo, amet porttitor hac sed nunc. Pulvinar pharetra eget eleifend aliquam. Gravida a risus cras luctus dignissim tristique cras aliquet. Iaculis quisque ligula platea nibh. Sit augue tempus aliquet sollicitudin in nunc purus at. Tincidunt sit egestas nibh nullam placerat sociis magna. "
     },
     {
-      "heading": "What is the difference between digital and physical deposits?",
+      "heading": "Quelle est la différence entre un dépôt numérique et un dépôt physique ?",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida at massa laoreet facilisi ac nisl convallis. Egestas porta hac sed etiam sem tempus cras varius. Nunc sed lorem aliquam justo, amet porttitor hac sed nunc. Pulvinar pharetra eget eleifend aliquam. Gravida a risus cras luctus dignissim tristique cras aliquet. Iaculis quisque ligula platea nibh. Sit augue tempus aliquet sollicitudin in nunc purus at. Tincidunt sit egestas nibh nullam placerat sociis magna. "
     },
     {
-      "heading": "Where is your data stored?",
+      "heading": "Où stockons-nous vos données ?",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida at massa laoreet facilisi ac nisl convallis. Egestas porta hac sed etiam sem tempus cras varius. Nunc sed lorem aliquam justo, amet porttitor hac sed nunc. Pulvinar pharetra eget eleifend aliquam. Gravida a risus cras luctus dignissim tristique cras aliquet. Iaculis quisque ligula platea nibh. Sit augue tempus aliquet sollicitudin in nunc purus at. Tincidunt sit egestas nibh nullam placerat sociis magna. "
     },
     {
-      "heading": "How do source code escrow works?",
+      "heading": "Comment fonctionne un escrow agreement ?",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida at massa laoreet facilisi ac nisl convallis. Egestas porta hac sed etiam sem tempus cras varius. Nunc sed lorem aliquam justo, amet porttitor hac sed nunc. Pulvinar pharetra eget eleifend aliquam. Gravida a risus cras luctus dignissim tristique cras aliquet. Iaculis quisque ligula platea nibh. Sit augue tempus aliquet sollicitudin in nunc purus at. Tincidunt sit egestas nibh nullam placerat sociis magna. "
     },
     {
-      "heading": "How is it different from a hash?",
+      "heading": "Quel est la différence avec un hash ?",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida at massa laoreet facilisi ac nisl convallis. Egestas porta hac sed etiam sem tempus cras varius. Nunc sed lorem aliquam justo, amet porttitor hac sed nunc. Pulvinar pharetra eget eleifend aliquam. Gravida a risus cras luctus dignissim tristique cras aliquet. Iaculis quisque ligula platea nibh. Sit augue tempus aliquet sollicitudin in nunc purus at. Tincidunt sit egestas nibh nullam placerat sociis magna. "
     }
   ],
   "solutions": [
     {
-      "name": "Deposit",
-      "content": "Deposits prove your ownership over your digital assests and help you win litigations with unforgeable evidence.",
+      "name": "Dépôt",
+      "content": "Les dépôts prouve la possession de vos biens et vous aide à gagner des litiges avec une preuve infalsifiable.",
       "readMorePath": "/solutions",
-      "callBackText": "Protect your innovations",
+      "callBackText": "Protégez votre innovation",
       "callBackPath": "/"
     }
   ]

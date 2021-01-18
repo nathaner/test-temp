@@ -1,0 +1,23 @@
+{
+    "aboutUs": "À propos de nous",
+    "address": "Address",
+    "blog": "Blog",
+    "contact": "Contact", 
+    "contactUs": "Contact us",
+    "firstName": "First name",
+    "home": "Home",
+    "lastName": "Last name",
+    "legal": "Legal",
+    "message": "Message",
+    "optional": "Optional",
+    "privacyPolicy": "Privacy policy",
+    "resource": "Resource", 
+    "send": "Send",
+    "signIn": "Sign in",
+    "social": "Social",
+    "solutions": "Solutions",
+    "termsAndConditions": "Terms and conditions", 
+    "whitePapers": "Livres blanc",
+    "youAre": "You are",
+    "wantToGetInTouch": "Want to get in touch?"
+}
