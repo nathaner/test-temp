@@ -6,7 +6,7 @@ import ButtonLinkOutlined from "../components/common/ButtonLinkOutlined";
 import Container from "../components/common/Container";
 import Head from "../components/common/Head";
 import Heading from "../components/common/Heading";
-import WaveSection from "../components/WaveSection";
+import BottomSection from "../components/BottomSection";
 
 import en from "../locales/en/homepage.json";
 
@@ -161,7 +161,7 @@ export default function Home(props) {
                 <Heading>Your questions answered</Heading>
                 <Accordion data={props.accordion} />
             </section>
-            <WaveSection>
+            <BottomSection>
                 <Heading>Want to get in touch?</Heading>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -174,7 +174,7 @@ export default function Home(props) {
                 <ButtonLinkContrast href="/contact">
                     Contact us
                 </ButtonLinkContrast>
-            </WaveSection>
+            </BottomSection>
         </>
     );
 }

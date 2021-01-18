@@ -1,9 +1,9 @@
-import Container from './common/Container';
+import div from './common/Container';
 
-export default function WaveSection({ children }) {
+export default function BottomSection({ children }) {
   return (
     <section className="wave-section">
-      <Container>
+      <div className="block container">
         <div className="custom-shape-divider-top-1610045199">
           <svg
             data-name="Layer 1"
@@ -18,7 +18,7 @@ export default function WaveSection({ children }) {
           </svg>
         </div>
         {children}
-      </Container>
+      </div>
     </section>
   );
 }
