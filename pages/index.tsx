@@ -58,7 +58,7 @@ export default function Home() {
                         <img src="img/airbus-logo.png" alt="Airbus logo" />
                     </div>
                     <div>
-                        <img src="img/Total-logo.png" alt="Total logo" />
+                        <img src="img/total-logo.png" alt="Total logo" />
                     </div>
                     <div>
                         <img className="w-max" src="img/cnrs-logo.png" alt="CNRS logo" />
