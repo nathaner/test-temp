@@ -75,10 +75,8 @@ export default function Home(props) {
             <section className="container block safety">
                 <Heading>How safe is it?</Heading>
                 <div className="safety container block">
-                    <div className="row">
-                        <div>
-                            <img src="img/iso-27001.png" alt="ISO 27001" />
-                        </div>
+                    <article className="media">
+                        <img src="img/iso-27001.png" alt="ISO 27001" />
                         <div>
                             <h3>ISO 27001 certified</h3>
                             <p>
@@ -88,8 +86,9 @@ export default function Home(props) {
                                 ultricies tristique lobortis
                             </p>
                         </div>
-                    </div>
-                    <div className="row">
+                    </article>
+                    <article className="media">
+                        <img src="img/gdpr-ready.png" alt="GDPR Ready" />
                         <div>
                             <h3>GDPR Ready</h3>
                             <p>
@@ -99,17 +98,9 @@ export default function Home(props) {
                                 ultricies tristique lobortis
                             </p>
                         </div>
-                        <div>
-                            <img src="img/gdpr-ready.png" alt="GDPR Ready" />
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div>
-                            <img
-                                src="img/security.png"
-                                alt="Algorithm security"
-                            />
-                        </div>
+                    </article>
+                    <article className="media">
+                        <img src="img/security.png" alt="Algorithm security" />
                         <div>
                             <h3>Secure algorithms</h3>
                             <p>
@@ -119,8 +110,12 @@ export default function Home(props) {
                                 ultricies tristique lobortis
                             </p>
                         </div>
-                    </div>
-                    <div className="row">
+                    </article>
+                    <article className="media">
+                        <img
+                            src="img/servers.png"
+                            alt="Servers located in France"
+                        />
                         <div>
                             <h3>All data are stored in France</h3>
                             <p>
@@ -130,17 +125,9 @@ export default function Home(props) {
                                 ultricies tristique lobortis
                             </p>
                         </div>
-                        <div>
-                            <img
-                                src="img/servers.png"
-                                alt="Servers located in France"
-                            />
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div>
-                            <img src="img/eidas-ready.svg" alt="eIDAS Ready" />
-                        </div>
+                    </article>
+                    <article className="media">
+                        <img src="img/eidas-ready.svg" alt="eIDAS Ready" />
                         <div>
                             <h3>eIDAS Ready</h3>
                             <p>
@@ -150,9 +137,8 @@ export default function Home(props) {
                                 ultricies tristique lobortis
                             </p>
                         </div>
-                    </div>
+                    </article>
                 </div>
-                <div className="benefit"></div>
             </section>
             <section className="container block">
                 <Heading>Pricing</Heading>

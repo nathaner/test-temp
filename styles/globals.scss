@@ -153,3 +153,44 @@ p {
 .block {
     padding: 2rem 2rem;
 }
+
+
+.media {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.media:last-of-type {
+    margin: 0;
+}
+
+.media img {
+    display: block;
+    margin: 2rem auto;
+    max-width: 170px;
+}
+
+.media h3 {
+    margin: 0 auto 1rem;
+    color: var(--color-heading-subheading);
+}
+
+@media screen and (min-width: 768px) {
+    .media {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    .media img {
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .safety .media:nth-child(even) img {
+        order: 2;
+        margin-left: 3rem;
+        margin-right: 0;
+    }
+}
