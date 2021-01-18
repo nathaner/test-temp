@@ -14,9 +14,9 @@ export default function AboutVaultinum() {
       />
 
       <Container>
-        <section className="about-us-intro">
+        <section className="about-us-intro container block">
           <Heading>About us</Heading>
-          <div className="grid">
+          <div className="grid grid-1x2">
             <div>
               <p>
                 Vaultinum (formerly CELOG) is a trusted, independent, and
@@ -51,7 +51,7 @@ export default function AboutVaultinum() {
             ></iframe>
           </div>
         </section>
-        <section>
+        <section className="container block">
           <HeadingCenter>For 40 years</HeadingCenter>
           <p className="text-center">
             Vaultinum experts are committed to protecting the intellectual
@@ -66,7 +66,7 @@ export default function AboutVaultinum() {
         </section>
         <section className="text-center why-vaultinum">
           <HeadingCenter>Why Vaultinum?</HeadingCenter>
-          <div className="grid">
+          <div className="grid grid-1x2">
             <div>
               <h3>The traditional way of digital asset protection</h3>
               <ul>

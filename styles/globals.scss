@@ -250,6 +250,17 @@ label .label-optional {
     font-style: italic;
 }
 
+/* Homepage */
+
+.block-home-customers .grid {
+    gap: 4rem 2rem;
+    align-items: center;
+}
+
+.block-home-customers img {
+    max-height: 120px;
+    max-width: 200px;
+}
 
 /* Contact page */ 
 

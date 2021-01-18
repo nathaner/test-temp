@@ -38,7 +38,7 @@ export default function NavBar() {
     ];
 
     return (
-        <nav className="navbar container">
+        <nav className="navbar container block">
             <Link href="/">
                 <a>
                     <VaultinumLogo />
