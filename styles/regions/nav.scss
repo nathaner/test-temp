@@ -59,11 +59,12 @@
     .navbar {
         padding: 2rem 0;
     }
-    .navbar .open {
+
+    .navbar .toggler-open {
         display: none;
     }
 
-    .navbar .close {
+    .navbar .toggler-close {
         display: none;
     }
 
@@ -73,6 +74,10 @@
         min-width: auto;
         max-width: 100%;
         width: 70%;
+        padding: 0;
+    }
+
+    .navbar .menu.open {
         padding: 0;
     }
 

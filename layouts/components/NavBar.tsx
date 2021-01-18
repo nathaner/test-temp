@@ -43,7 +43,7 @@ export default function NavBar() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                className="open"
+                className="toggler-open"
                 onClick={handleOpen}
             >
                 <path
@@ -59,7 +59,7 @@ export default function NavBar() {
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    className="close"
+                    className="toggler-close"
                     onClick={handleOpen}
                 >
                     <path
