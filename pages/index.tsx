@@ -135,7 +135,7 @@ export default function Home(props) {
         <section>
           <Heading>Pricing</Heading>
         </section>
-        <section>
+        <section className="container block">
           <Heading>Your questions answered</Heading>
           <Accordion data={props.accordion} />
         </section>

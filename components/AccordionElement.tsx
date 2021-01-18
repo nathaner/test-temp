@@ -1,20 +1,30 @@
-import { useState } from 'react';
-import Chevron from './common/Chevron';
+import { useState } from "react";
+import classNames from "classnames";
 
 export default function AccordionElement({ heading, children }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const handleChange = () => {
-    setIsOpen(!isOpen);
-  };
-  return (
-    <div className={'question ' + (isOpen ? 'opened' : 'closed')}>
-      <h4 onClick={handleChange}>
-        {heading}
-        <div>
-          {isOpen ? <Chevron /> : <Chevron orientation="LEFT" />}
+    const [expanded, setExpanded] = useState(false);
+    const handleChange = () => {
+        setExpanded((isOpen) => !isOpen);
+    };
+    return (
+        <div className={classNames("accordion", { expanded })}>
+            <header>
+                <h3 onClick={handleChange}>{heading}</h3>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 19l-7-7 7-7"
+                    />
+                </svg>
+            </header>
+            <p>{children}</p>
         </div>
-      </h4>
-      <p>{children}</p>
-    </div>
-  );
+    );
 }

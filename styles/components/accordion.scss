@@ -1,31 +1,44 @@
+
+/* Accordion */
+
 .accordion {
-  margin: 2rem auto;
+  margin: 1rem auto;
+}
 
-  h4 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-bottom: 1px solid var(--color-lightgrey);
-    padding: 10px 30px;
-    font-weight: normal;
-    margin: 20px auto;
-  }
+.accordion header {
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(165, 165, 165);
+}
 
-  h4 svg {
-    width: 24px;
-    color: var(--color-grey);
-  }
+.accordion header h3 {
+  margin: 0;
+  flex-grow: 1;
+  font-size: 2rem;
+}
 
-  .closed p {
-    display: block;
-    line-height: 0;
-    max-height: 0px;
-    overflow: hidden;
-  }
-  .opened p {
-    min-height: auto;
-    padding: 0 30px;
-  }
+.accordion header svg {
+  display: block;
+  width: 24px;
+  color: var(--color-primary);
+  transition: transform 0.3s;
+}
+
+.accordion p {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.accordion.expanded header svg {
+  transform: rotate(-90deg);
+}
+
+.accordion.expanded p {
+  max-height: 100%;
+  opacity: 1;
 }
