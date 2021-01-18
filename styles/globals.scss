@@ -126,3 +126,30 @@ p {
   list-style: none;
   padding: 0;
 }
+
+
+.grid {
+    display: grid;
+    justify-items: center;
+    gap: 2rem 0;
+    margin: 2rem auto;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .grid-1x2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-1x3 {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        justify-content: flex-start;
+        gap: 2rem 0;
+    }
+}
+
+
+.block {
+    padding: 2rem 2rem;
+}
