@@ -50,7 +50,7 @@ export default function Home() {
                     ))}
                 </div>
             </section>
-            <section className="container block block-home-customers">
+            <section className="container block block-home-customers"> 
                 <Heading>Trusted by notorious companies</Heading>
                 <p>Beyond services, an unforgeable proof of trust for decades...</p>
                 <div className="grid grid-1x3">
