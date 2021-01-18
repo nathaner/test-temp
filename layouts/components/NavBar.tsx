@@ -73,7 +73,7 @@ export default function NavBar() {
                     {MENU_ITEMS.map((item, index) => (
                         <li key={index}>
                             <Link href={item.path}>
-                                <a>{item.name}</a>
+                                <a onClick={handleOpen}>{item.name}</a>
                             </Link>
                         </li>
                     ))}
