@@ -51,9 +51,9 @@
 
 .footer .container > div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, auto));
-    gap: 2rem 1rem;
-    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    justify-items: center;
+    align-items: start;
 }
 
 .footer .brand {
