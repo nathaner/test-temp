@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Container from '../../components/common/Container';
+import { BLOG_ARTICLE_HREF, getBlogArticleLink } from '../../services/routingService';
 
 type Post = {
   title: string;
@@ -48,8 +49,8 @@ export const Blog: React.FC<{ posts: Post[] }> = (props) => {
                   <header>
                     <h2>
                       <Link
-                        href="/blog/post/[slug]"
-                        as={`/blog/post/${post.slug}`}
+                        href={BLOG_ARTICLE_HREF}
+                        as={getBlogArticleLink(post.slug)}
                       >
                         <a>{post.title}</a>
                       </Link>

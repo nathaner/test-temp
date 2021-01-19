@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Container from '../../../components/common/Container';
+import { BLOG_PAGE } from '../../../services/routingService';
 
 const { BLOG_URL, CONTENT_API_KEY } = process.env;
 
@@ -63,7 +64,7 @@ const Post: React.FC<{ post: Post }> = (props) => {
       <main className="blog-article">
         <Container>
           <p>
-            <Link href="/blog">
+            <Link href={BLOG_PAGE}>
               <a>Go back</a>
             </Link>
           </p>

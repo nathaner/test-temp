@@ -3,6 +3,7 @@ import ButtonLinkContrast from '../components/common/ButtonLinkContrast';
 import Container from '../components/common/Container';
 import Head from '../components/common/Head';
 import Heading from '../components/common/Heading';
+import { CONTACT_PAGE, SIGN_IN_PAGE, WEBINARS_PAGE, WHITE_PAPERS_PAGE } from '../services/routingService';
 
 export default function AboutVaultinum() {
   return (
@@ -23,7 +24,7 @@ export default function AboutVaultinum() {
             </p>
 
             <div className="text-center">
-              <ButtonLink href="/">Protect your IP</ButtonLink>
+              <ButtonLink href={SIGN_IN_PAGE}>Protect your IP</ButtonLink>
             </div>
           </section>
           <section className="container block">
@@ -37,7 +38,7 @@ export default function AboutVaultinum() {
             </p>
 
             <div className="text-center">
-              <ButtonLink href="/">Ensure your technology</ButtonLink>
+              <ButtonLink href={SIGN_IN_PAGE}>Ensure your technology</ButtonLink>
             </div>
           </section>
           <section className="container block">
@@ -51,7 +52,7 @@ export default function AboutVaultinum() {
             </p>
 
             <div className="text-center">
-              <ButtonLink href="/">Secure your transfer</ButtonLink>
+              <ButtonLink href={SIGN_IN_PAGE}>Secure your transfer</ButtonLink>
             </div>
           </section>
           <section className="container block">
@@ -65,7 +66,7 @@ export default function AboutVaultinum() {
             </p>
 
             <div className="text-center">
-              <ButtonLink href="/">Certify your work</ButtonLink>
+              <ButtonLink href={SIGN_IN_PAGE}>Certify your work</ButtonLink>
             </div>
           </section>
           <section className="container block">
@@ -79,7 +80,7 @@ export default function AboutVaultinum() {
             </p>
 
             <div className="text-center">
-              <ButtonLink href="/">Prove your compliance</ButtonLink>
+              <ButtonLink href={SIGN_IN_PAGE}>Prove your compliance</ButtonLink>
             </div>
           </section>
           <section className="container block">
@@ -107,7 +108,7 @@ export default function AboutVaultinum() {
               </div>
             </div>
 
-            <ButtonLinkContrast href="/">
+            <ButtonLinkContrast href={SIGN_IN_PAGE}>
               Secure your investments
             </ButtonLinkContrast>
             </div>
@@ -117,9 +118,9 @@ export default function AboutVaultinum() {
             <Heading>Need more information?</Heading>
 
             <div className="grid grid-1x3">
-              <ButtonLink href="/">White papers</ButtonLink>
-              <ButtonLink href="/">Webinars</ButtonLink>
-              <ButtonLink href="/">Contact us</ButtonLink>
+              <ButtonLink href={WHITE_PAPERS_PAGE}>White papers</ButtonLink>
+              <ButtonLink href={WEBINARS_PAGE}>Webinars</ButtonLink>
+              <ButtonLink href={CONTACT_PAGE}>Contact us</ButtonLink>
             </div>
         </section>
       </main>

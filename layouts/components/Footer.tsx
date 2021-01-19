@@ -1,12 +1,10 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-
-import en from "../../locales/en/en";
-import fr from "../../locales/fr/fr";
-
 import classNames from "classnames";
 import Chevron from "../../components/common/Chevron";
+import getLocale from '../../services/getLocale';
+import { ABOUT_US_PAGE, BLOG_PAGE, CONTACT_PAGE, HOME_PAGE, PRIVACY_POLICY_PAGE, SOCIAL_PAGE, SOLUTIONS_PAGE, TERMS_AND_CONDITIONS_PAGE, WHITE_PAPERS_PAGE, YOU_ARE_PAGE } from '../../services/routingService';
 
 export default function Footer() {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -18,7 +16,8 @@ export default function Footer() {
     const router = useRouter();
     const { locale } = router;
 
-    const t = locale === "en" ? en : fr;
+    const t = getLocale(locale);
+
     const [currentLanguage, setCurrentLanguage] = useState(locale === "en" ? "English" : "Français");
 
     const changeLanguage = (selectedLocale: string) => {
@@ -31,32 +30,32 @@ export default function Footer() {
         {
             heading: "Vaultinum",
             items: [
-                { name: t.footer.home, path: "/" },
-                { name: t.footer.solutions, path: "/solutions" },
-                { name: t.footer.youAre, path: "/you-are" },
-                { name: t.footer.aboutUs, path: "/about-us" },
-                { name: t.footer.contact, path: "/contact" },
+                { name: t.footer.home, path: HOME_PAGE },
+                { name: t.footer.solutions, path: SOLUTIONS_PAGE },
+                { name: t.footer.youAre, path: YOU_ARE_PAGE },
+                { name: t.footer.aboutUs, path: ABOUT_US_PAGE },
+                { name: t.footer.contact, path: CONTACT_PAGE },
             ],
         },
         {
             heading: "Resources",
             items: [
-                { name: t.footer.blog, path: "/blog" },
-                { name: t.footer.whitePapers, path: "/" },
+                { name: t.footer.blog, path: BLOG_PAGE },
+                { name: t.footer.whitePapers, path: WHITE_PAPERS_PAGE },
             ],
         },
         {
             heading: "Social",
             items: [
-                { name: "LinkedIn", path: "/social" },
-                { name: "Facebook", path: "/social" },
+                { name: "LinkedIn", path: SOCIAL_PAGE },
+                { name: "Facebook", path: SOCIAL_PAGE },
             ],
         },
         {
             heading: "Legal",
             items: [
-                { name: t.footer.termsAndConditions, path: "/terms-and-conditions" },
-                { name: t.footer.privacyPolicy, path: "/privacy-policy" },
+                { name: t.footer.termsAndConditions, path: TERMS_AND_CONDITIONS_PAGE },
+                { name: t.footer.privacyPolicy, path: PRIVACY_POLICY_PAGE },
             ],
         },
     ];

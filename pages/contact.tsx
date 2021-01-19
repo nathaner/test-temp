@@ -6,14 +6,14 @@ import Head from "../components/common/Head";
 import Input from "../components/common/Input";
 import TextArea from "../components/common/TextArea";
 import { useRouter } from "next/router";
-
-import en from "../locales/en/en";
-import fr from "../locales/fr/fr";
+import getLocale from '../services/getLocale';
 
 export default function Contact() {
     const router = useRouter();
     const { locale } = router;
-    const t = locale === "en" ? en : fr;
+
+    const t = getLocale(locale);
+    
     return (
         <>
             <Head
@@ -29,7 +29,7 @@ export default function Contact() {
                         <Input name="lastName" label="Last name" type="lastName" id="lastName" optional />
                         <Input name="email" label="Email" type="email" id="email" />
                         <TextArea label="Message" name="message" id="message" rows={12}></TextArea>
-                        <Button>Send</Button>
+                        <Button>{t.general.send}</Button>
                     </form>
                 </section>
                 <section className="block contact-address">

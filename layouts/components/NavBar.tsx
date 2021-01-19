@@ -3,14 +3,14 @@ import { useState } from "react";
 import VaultinumLogo from "./VaultinumLogo";
 import classNames from "classnames";
 import { useRouter } from "next/router";
-
-import en from "../../locales/en/en";
-import fr from "../../locales/fr/fr";
+import getLocale from "../../services/getLocale";
+import { ABOUT_US_PAGE, CONTACT_PAGE, HOME_PAGE, SIGN_IN_PAGE, SOLUTIONS_PAGE, YOU_ARE_PAGE } from "../../services/routingService";
 
 export default function NavBar() {
     const router = useRouter();
     const { locale } = router;
-    const t = locale === "en" ? en : fr;
+
+    const t = getLocale(locale);
 
     const [open, setOpen] = useState(false);
 
@@ -21,25 +21,25 @@ export default function NavBar() {
     const MENU_ITEMS = [
         {
             name: t.navbar.youAre,
-            path: "/you-are",
+            path: YOU_ARE_PAGE,
         },
         {
             name: t.navbar.solutions,
-            path: "/solutions",
+            path: SOLUTIONS_PAGE,
         },
         {
             name: t.navbar.aboutUs,
-            path: "/about-us",
+            path: ABOUT_US_PAGE,
         },
         {
             name: t.navbar.contact,
-            path: "/contact",
+            path: CONTACT_PAGE,
         },
     ];
 
     return (
         <nav className="navbar container block">
-            <Link href="/" locale={locale}>
+            <Link href={HOME_PAGE} locale={locale}>
                 <a>
                     <VaultinumLogo />
                 </a>
@@ -74,7 +74,7 @@ export default function NavBar() {
                         </li>
                     ))}
                     <li>
-                        <a href="" className="btn primary">
+                        <a href={SIGN_IN_PAGE} className="btn primary">
                             {t.general.signIn}
                         </a>
                     </li>
