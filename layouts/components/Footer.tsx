@@ -6,6 +6,7 @@ import en from "../../locales/en/en";
 import fr from "../../locales/fr/fr";
 
 import classNames from "classnames";
+import Chevron from "../../components/common/Chevron";
 
 export default function Footer() {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -18,10 +19,12 @@ export default function Footer() {
     const { locale } = router;
 
     const t = locale === "en" ? en : fr;
+    const [currentLanguage, setCurrentLanguage] = useState(locale === "en" ? "English" : "Français");
 
     const changeLanguage = (selectedLocale: string) => {
         router.push(router.pathname, router.asPath, { locale: selectedLocale });
-        setIsExpanded(false)
+        setCurrentLanguage(selectedLocale === "en" ? "English" : "Français");
+        setIsExpanded(false);
     };
 
     const FOOTER_ITEMS = [
@@ -85,7 +88,8 @@ export default function Footer() {
                             })}
                         >
                             <div className="dropdown__header language-switcher__header" onClick={handleExpand}>
-                                English
+                                {currentLanguage}
+                                <Chevron orientation="DOWN" />
                             </div>
                             <div className="dropdown__content language-switcher__body">
                                 <div onClick={() => changeLanguage("en")}>English</div>
