@@ -8,7 +8,7 @@ export const en = {
     general,
     navbar,
     footer,
-    // contact,
+    contact,
     homepage
 }
 

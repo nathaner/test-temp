@@ -22,8 +22,8 @@ export default function Contact() {
             />
             <div className="container grid grid-1x2">
                 <section className="block">
-                    <Heading>Contact us</Heading>
-                    <p>Contact</p>
+                    <Heading>{t.contact.contactUs}</Heading>
+                    <p>{t.contact.contactMessage}</p>
                     <form>
                         <Input name="firstName" label="First name" type="text" id="firstName" optional />
                         <Input name="lastName" label="Last name" type="lastName" id="lastName" optional />
@@ -33,7 +33,7 @@ export default function Contact() {
                     </form>
                 </section>
                 <section className="block contact-address">
-                    <h2>Address</h2>
+                    <h2>{t.contact.address}</h2>
                     <img src="img/vaultinum-office.jpg" alt="Vaultinum office" />
                     <ul className="list-unstyled">
                         <li>Vaultinum</li>

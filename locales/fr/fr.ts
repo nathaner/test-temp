@@ -9,7 +9,7 @@ export const fr: Translation = {
     general,
     navbar,
     footer,
-    // contact,
+    contact,
     homepage
 }
 
