@@ -1,83 +1,59 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 import en from "../../locales/en/en";
 import fr from "../../locales/fr/fr";
 
+import classNames from "classnames";
+
 export default function Footer() {
+    const [isExpanded, setIsExpanded] = useState(false);
+
+    const handleExpand = () => {
+        setIsExpanded((isExpanded) => !isExpanded);
+    };
+
     const router = useRouter();
     const { locale } = router;
 
     const t = locale === "en" ? en : fr;
 
-    const changeLanguage = (e) => {
-        const locale = e.target.value;
-        router.push(router.pathname, router.asPath, { locale });
+    const changeLanguage = (selectedLocale: string) => {
+        router.push(router.pathname, router.asPath, { locale: selectedLocale });
+        setIsExpanded(false)
     };
 
     const FOOTER_ITEMS = [
         {
             heading: "Vaultinum",
             items: [
-                {
-                    name: t.general.home,
-                    path: "/",
-                },
-                {
-                    name: t.general.solutions,
-                    path: "/solutions",
-                },
-                {
-                    name: t.general.youAre,
-                    path: "/you-are",
-                },
-                {
-                    name: t.general.aboutUs,
-                    path: "/about-us",
-                },
-                {
-                    name: t.general.contact,
-                    path: "/contact",
-                },
+                { name: t.footer.home, path: "/" },
+                { name: t.footer.solutions, path: "/solutions" },
+                { name: t.footer.youAre, path: "/you-are" },
+                { name: t.footer.aboutUs, path: "/about-us" },
+                { name: t.footer.contact, path: "/contact" },
             ],
         },
         {
             heading: "Resources",
             items: [
-                {
-                    name: t.general.blog,
-                    path: "/blog",
-                },
-                {
-                    name: t.general.whitePapers,
-                    path: "/",
-                },
+                { name: t.footer.blog, path: "/blog" },
+                { name: t.footer.whitePapers, path: "/" },
             ],
         },
         {
             heading: "Social",
             items: [
-                {
-                    name: "LinkedIn",
-                    path: "/social",
-                },
-                {
-                    name: "Facebook",
-                    path: "/social",
-                },
+                { name: "LinkedIn", path: "/social" },
+                { name: "Facebook", path: "/social" },
             ],
         },
         {
             heading: "Legal",
             items: [
-                {
-                    name: t.general.termsAndConditions,
-                    path: "/terms-and-conditions",
-                },
-                {
-                    name: t.general.privacyPolicy,
-                    path: "/privacy-policy",
-                },
+                { name: t.footer.termsAndConditions, path: "/terms-and-conditions" },
+                { name: t.footer.privacyPolicy, path: "/privacy-policy" },
             ],
         },
     ];
@@ -102,22 +78,26 @@ export default function Footer() {
                     ))}
                     <div className="brand">
                         <img src="./img/vaultinum-logo.png" alt="Vaultinum logo" />
-                        <span>Since 1976</span>
+                        <span>{t.footer.since1976}</span>
+                        <div
+                            className={classNames("dropdown", "language-switcher", {
+                                "dropdown--expanded": isExpanded,
+                            })}
+                        >
+                            <div className="dropdown__header language-switcher__header" onClick={handleExpand}>
+                                English
+                            </div>
+                            <div className="dropdown__content language-switcher__body">
+                                <div onClick={() => changeLanguage("en")}>English</div>
+                                <div onClick={() => changeLanguage("fr")}>Français</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <select
-                    onChange={changeLanguage}
-                    defaultValue={locale}
-                    className="text-white text-shadow-sm text-lg bg-transparent tracking-wide"
-                >
-                    <option className="text-black" value="en">
-                        English
-                    </option>
-                    <option className="text-black" value="fr">
-                        Français
-                    </option>
-                </select>
-                <p className="copyright">&copy; Vaultinum {new Date().getFullYear()} | All rights reserved.</p>
+
+                <p className="copyright">
+                    &copy; Vaultinum {new Date().getFullYear()} | {t.footer.allRightsReserved}.
+                </p>
             </div>
         </footer>
     );

@@ -20,19 +20,19 @@ export default function NavBar() {
 
     const MENU_ITEMS = [
         {
-            name: t.menu.youAre,
+            name: t.navbar.youAre,
             path: "/you-are",
         },
         {
-            name: t.menu.solutions,
+            name: t.navbar.solutions,
             path: "/solutions",
         },
         {
-            name: t.menu.aboutUs,
+            name: t.navbar.aboutUs,
             path: "/about-us",
         },
         {
-            name: t.menu.contact,
+            name: t.navbar.contact,
             path: "/contact",
         },
     ];

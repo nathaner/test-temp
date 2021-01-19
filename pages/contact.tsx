@@ -23,7 +23,7 @@ export default function Contact() {
             <div className="container grid grid-1x2">
                 <section className="block">
                     <Heading>Contact us</Heading>
-                    <p>{t.contact.contactMessage}</p>
+                    <p>Contact</p>
                     <form>
                         <Input name="firstName" label="First name" type="text" id="firstName" optional />
                         <Input name="lastName" label="Last name" type="lastName" id="lastName" optional />
