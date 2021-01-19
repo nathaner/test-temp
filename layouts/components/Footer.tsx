@@ -71,7 +71,7 @@ export default function Footer() {
                             <ul className="list-unstyled">
                                 {item.items.map((link, index) => (
                                     <li key={index}>
-                                        <Link href={link.path}>
+                                        <Link href={link.path} locale={locale}>
                                             <a>{link.name}</a>
                                         </Link>
                                     </li>

@@ -39,7 +39,7 @@ export default function NavBar() {
 
     return (
         <nav className="navbar container block">
-            <Link href="/">
+            <Link href="/" locale={locale}>
                 <a>
                     <VaultinumLogo />
                 </a>
@@ -68,7 +68,7 @@ export default function NavBar() {
                 <ul className="list-unstyled">
                     {MENU_ITEMS.map((item, index) => (
                         <li key={index}>
-                            <Link href={item.path}>
+                            <Link href={item.path} locale={locale}>
                                 <a onClick={handleOpen}>{item.name}</a>
                             </Link>
                         </li>
