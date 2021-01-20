@@ -8,7 +8,9 @@ export default function PrivacyPolicy() {
         title="Vaultinum — Privacy policy"
         description="Vaultinum respects your privacy, learn more about what we do with your data."
       />
-      <Heading>Privacy Policy</Heading>
+      <main className="container block">
+        <h2>Privacy Policy</h2>
+      </main>
     </>
   );
 }

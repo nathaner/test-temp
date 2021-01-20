@@ -1,5 +1,5 @@
 export default function WhitePaprs() {
     return <main className="container">
-        <h1>White papers</h1>
+        <h2>White papers</h2>
     </main>
 }

@@ -8,7 +8,9 @@ export default function TermsAndConditions() {
         title="Vaultinum — Terms and conditions"
         description="Read more about the terms and conditions of Vaultinum."
       />
-      <Heading>Terms and Conditions</Heading>
+      <main className="container block">
+        <h2>Terms and Conditions </h2>
+      </main>
     </>
   );
 }

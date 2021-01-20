@@ -9,10 +9,10 @@ export default function Social() {
         title="Vaultinum — Solutions"
         description="Follow Vaultinum on social media to be sure to know the latest news regarding intellectual property."
       />
-      <section>
-        <Heading>Follow us around</Heading>
+      <main className="container block">
+        <h2>Follow us around</h2>
         <p>Want to know all everything about intellectual property?</p>
-      </section>
+      </main>
     </>
   );
 }

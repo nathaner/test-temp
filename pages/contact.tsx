@@ -13,6 +13,10 @@ export default function Contact() {
     const { locale } = router;
 
     const t = getLocale(locale);
+
+    const handleSubmit = e => {
+        e.preventDefault()
+    }
     
     return (
         <>
@@ -24,7 +28,7 @@ export default function Contact() {
                 <section className="block">
                     <Heading>{t.contact.contactUs}</Heading>
                     <p>{t.contact.contactMessage}</p>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <Input name="firstName" label="First name" type="text" id="firstName" optional />
                         <Input name="lastName" label="Last name" type="lastName" id="lastName" optional />
                         <Input name="email" label="Email" type="email" id="email" />

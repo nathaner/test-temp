@@ -9,7 +9,7 @@ export const SIGN_IN_PAGE = "http://app.vaultinum.com"
 export const BLOG_PAGE = "/blog";
 export const TERMS_AND_CONDITIONS_PAGE = "/terms-and-conditions";
 export const PRIVACY_POLICY_PAGE = "/privacy-policy";
-export const SOCIAL_PAGE = "/privacy-policy";
+export const SOCIAL_PAGE = "/social";
 export const WEBINARS_PAGE = "/webinars";
 export const WHITE_PAPERS_PAGE = "/white-papers";
 
