@@ -4,7 +4,7 @@ import VaultinumLogo from "./VaultinumLogo";
 import classNames from "classnames";
 import { useRouter } from "next/router";
 import getLocale from "../../services/getLocale";
-import { ABOUT_US_PAGE, CONTACT_PAGE, HOME_PAGE, SIGN_IN_PAGE, SOLUTIONS_PAGE, YOU_ARE_PAGE } from "../../services/routingService";
+import { ABOUT_US_PAGE, BLOG_PAGE, CONTACT_PAGE, HOME_PAGE, SIGN_IN_PAGE, SOLUTIONS_PAGE, YOU_ARE_PAGE } from "../../services/routingService";
 
 export default function NavBar() {
     const router = useRouter();
@@ -34,6 +34,10 @@ export default function NavBar() {
         {
             name: t.navbar.contact,
             path: CONTACT_PAGE,
+        },
+        {
+            name: t.navbar.blog,
+            path: BLOG_PAGE,
         },
     ];
 
